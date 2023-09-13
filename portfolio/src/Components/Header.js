@@ -8,13 +8,13 @@ const Header = () => {
  
   return (
     <>
-      <AppBar elevation={0} position='fixed' sx={{ background: 'transparent', boxShadow: 'none' }}>
+      <AppBar elevation={0} position='fixed' sx={{ backgroundColor: '#2f6163', boxShadow: 'none' }}>
         <Toolbar>
-          <Typography sx={{color: 'black', fontWeight: 500, fontSize: 20}}>Varad Kulkarni</Typography>
-          <Tabs sx={{ marginLeft: 'auto', color: 'black' }}indicatorColor='secondary'>
+          <Typography sx={{ color: '#40c7cf', fontWeight: 500, fontSize: 20}}>Varad Kulkarni</Typography>
+          <Tabs sx={{ marginLeft: 'auto'}}indicatorColor='secondary'>
             {
               pages.map((page, index) => (
-                <Tab key={index} label={page}></Tab>
+                <Tab sx={{ color:'#40c7cf'}} key={index} label={page}></Tab>
               ))
             }
           </Tabs>

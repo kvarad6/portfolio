@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'space-between', mt: 8}}>
-        <Grid Item xs={12} sx={{ backgroundColor:'#446769'}}>
+        <Grid Item xs={12} sx={{ backgroundColor:'#2f6163'}}>
           <Title />
         </Grid>
         <Grid Item xs={12} sx={{ backgroundColor: '#72a6a8' }}>
