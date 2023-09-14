@@ -19,7 +19,7 @@ const Projects = () => {
             </Grid>
             <Grid sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
                 <Grid Item xs={4}>
-                    <Card sx={{ maxWidth: 345, backgroundColor:'#2f6163' }} onClick={() => setOpen(true)}>
+                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163', borderRadius: 10 }} onClick={() => setOpen(true)}>
                         <CardActionArea>
                             <CardContent sx={{m:3}}>
                                 <Typography gutterBottom variant="h5" textAlign='center' sx={{color:'white'}}>
@@ -44,7 +44,7 @@ const Projects = () => {
                     </Card>
                 </Grid>
                 <Grid Item xs={4}>
-                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163' }} onClick={() => setOpen(true)}>
+                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163', borderRadius: 10 }} onClick={() => setOpen(true)}>
                         <CardActionArea>
                             <CardContent sx={{ m: 3 }}>
                                 <Typography gutterBottom variant="h5" textAlign='center' sx={{ color: 'white' }}>
@@ -69,7 +69,7 @@ const Projects = () => {
                     </Card>
                 </Grid>
                 <Grid Item xs={4}>
-                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163' }} onClick={() => setOpen(true)}>
+                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163', borderRadius: 10 }} onClick={() => setOpen(true)}>
                         <CardActionArea>
                             <CardContent sx={{ m: 3 }}>
                                 <Typography gutterBottom variant="h5" textAlign='center' sx={{ color: 'white' }}>
@@ -94,7 +94,7 @@ const Projects = () => {
                     </Card>
                 </Grid>
                 <Grid Item xs={4}>
-                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163' }} onClick={() => setOpen(true)}>
+                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163', borderRadius: 10 }} onClick={() => setOpen(true)}>
                         <CardActionArea>
                             <CardContent sx={{ m: 3 }}>
                                 <Typography gutterBottom variant="h5" textAlign='center' sx={{ color: 'white' }}>
@@ -119,7 +119,7 @@ const Projects = () => {
                     </Card>
                 </Grid>
                 <Grid Item xs={4}>
-                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163' }} onClick={() => setOpen(true)}>
+                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163', borderRadius: 10 }} onClick={() => setOpen(true)}>
                         <CardActionArea>
                             <CardContent sx={{ m: 3 }}>
                                 <Typography gutterBottom variant="h5" textAlign='center' sx={{ color: 'white' }}>
@@ -144,7 +144,7 @@ const Projects = () => {
                     </Card>
                 </Grid>
                 <Grid Item xs={4}>
-                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163' }} onClick={() => setOpen(true)}>
+                    <Card sx={{ maxWidth: 345, backgroundColor: '#2f6163', borderRadius: 10 }} onClick={() => setOpen(true)}>
                         <CardActionArea>
                             <CardContent sx={{ m: 3 }}>
                                 <Typography gutterBottom variant="h5" textAlign='center' sx={{ color: 'white' }}>

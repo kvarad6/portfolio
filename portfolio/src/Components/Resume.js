@@ -33,7 +33,7 @@ const Resume = () => {
             <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 20 }}>
                 <Grid Item xs={6} sx={{ width: 400 }}>
                     <Typography textAlign='center' sx={{ fontSize: 30, mb: 3 }}>Work Experience</Typography>
-                    <List sx={{ width: '100%', bgcolor: '#2f6163' }}>
+                    <List sx={{ width: '100%', bgcolor: '#2f6163', borderRadius: 10 }}>
                         <ListItemButton onClick={() => setOpen(true)}>
                             <ListItem>
                                 <ListItemAvatar>
@@ -52,7 +52,7 @@ const Resume = () => {
                                 </ListItemText>
                             </ListItem>
                         </ListItemButton>
-                        <Divider variant="inset" />
+                        <Divider variant="middle" />
                         <ListItemButton>
                             <ListItem>
                                 <ListItemAvatar>
@@ -71,7 +71,7 @@ const Resume = () => {
                                 </ListItemText>
                             </ListItem>
                         </ListItemButton>
-                        <Divider variant="inset" />
+                        <Divider variant="middle" />
                         <ListItemButton>
                             <ListItem>
                                 <ListItemAvatar>
@@ -90,12 +90,11 @@ const Resume = () => {
                                 </ListItemText>
                             </ListItem>
                         </ListItemButton>
-                        <Divider variant="inset" />
                     </List>
                 </Grid>
                 <Grid Item xs={6} sx={{ width: 400 }}>
                     <Typography textAlign='center' sx={{ fontSize: 30, mb: 3 }}>Education</Typography>
-                    <List sx={{ width: '100%', bgcolor: '#2f6163' }}>
+                    <List sx={{ width: '100%', bgcolor: '#2f6163', borderRadius: 10 }}>
                         <ListItem sx={{m:1}}>
                             <ListItemAvatar>
                                 <Avatar alt="Searce Inc" src={viitLogo} sx={{ bgcolor: 'black', width: 45, height: 45 }} />
@@ -112,7 +111,7 @@ const Resume = () => {
                                 </Typography>
                             </ListItemText>
                         </ListItem>
-                        <Divider variant="inset" />
+                        <Divider variant="middle" />
                         <ListItem sx={{ m: 1 }}>
                             <ListItemAvatar>
                                 <Avatar alt="Searce Inc" src={narayanaLogoBlack} sx={{ bgcolor: 'black', width: 45, height: 45 }} />
@@ -129,7 +128,7 @@ const Resume = () => {
                                 </Typography>
                             </ListItemText>
                         </ListItem>
-                        <Divider variant="inset" />
+                        <Divider variant="middle" />
                         <ListItem sx={{ m: 1 }}>
                             <ListItemAvatar>
                                 <Avatar alt="Searce Inc" src={jnvLogo} sx={{ bgcolor: 'black', width: 45, height: 45 }} />
@@ -146,7 +145,6 @@ const Resume = () => {
                                 </Typography>
                             </ListItemText>
                         </ListItem>
-                        <Divider variant="inset" />
                     </List>
                 </Grid>
             </Grid>

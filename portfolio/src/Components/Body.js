@@ -5,6 +5,7 @@ import Resume from './Resume'
 import Projects from './Projects'
 import ContactMe from './ContactMe'
 import Skills from './Skills'
+import Certifications from './Certifications'
 
 const Body = () => {
     return (
@@ -21,6 +22,9 @@ const Body = () => {
                 </Grid>
                 <Grid Item xs={12} sx={{ ml: 5, mr: 5 }}>
                     <Projects />
+                </Grid>
+                <Grid Item xs={12} sx={{ ml: 5, mr: 5 }}>
+                    <Certifications />
                 </Grid>
                 <Grid Item xs={12} sx={{ ml: 5, mr: 5, mb: 5 }}>
                     <ContactMe />
