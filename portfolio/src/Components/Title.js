@@ -1,10 +1,14 @@
-import { Typography } from '@mui/material'
+import { Typography, Box } from '@mui/material'
 import React from 'react'
 
 const Title = () => {
   return (
     <>
-        <Typography sx={{color: 'white', textAlign: 'center', fontSize:50, m:10}}>Hi, This is Varad Kulkarni</Typography>
+        <Box sx={{m:10}}>
+            <Typography sx={{ color: 'white', fontSize: 30 }}>Hi, I am</Typography>
+            <Typography sx={{ color: 'white', fontSize: 80 }}>Varad Kulkarni</Typography>
+        </Box>
+        
     </>
   )
 }
