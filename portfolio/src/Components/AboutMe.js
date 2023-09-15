@@ -14,7 +14,7 @@ const AboutMe = () => {
                     <HorizontalRuleRoundedIcon fontSize='large' />
                 </Grid>
             </Grid>
-            <Grid sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 5, ml: 50, mr: 50 }}>
+            <Grid sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 5, ml: 45, mr: 45, textAlign: 'justify' }}>
                 <Grid Item xs={4}>
                     <Typography variant="subtitle1" sx={{ color: '#3AA6B9'}}>
                         Hey there! Thanks for stopping by my little corner of the internet. I'm Varad Kulkarni, a passionate software engineer who has been riding the IT rollercoaster for a thrilling year now. 🖥️ My journey in the world of technology has been nothing short of exhilarating, and I'm here to share a glimpse of my story with you.</Typography>
