@@ -14,7 +14,7 @@ const Certifications = () => {
         <>
             <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Grid Item>
-                    <Typography sx={{ fontSize: 40 }}>Certifications</Typography>
+                    <Typography sx={{ fontSize: 40, color: '#64CCC5' }}>Certifications</Typography>
                 </Grid>
                 <Grid Item>
                     <HorizontalRuleRoundedIcon fontSize='large' />
@@ -22,7 +22,7 @@ const Certifications = () => {
             </Grid>
             <Grid sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
                 <Grid Item xs={6}>
-                    <Card sx={{ backgroundColor: '#2f6163' }}>
+                    <Card sx={{ backgroundColor: '#0A4D68' }}>
                         <CardMedia
                             sx={{ width: 400, height: 300 }}
                             image={ACE}
@@ -41,7 +41,7 @@ const Certifications = () => {
                     </Card>
                 </Grid>
                 <Grid Item xs={6}>
-                    <Card sx={{ backgroundColor: '#2f6163' }}>
+                    <Card sx={{ backgroundColor: '#0A4D68' }}>
                         <CardMedia
                             sx={{ width: 400, height: 300 }}
                             image={GenAI}

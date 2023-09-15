@@ -24,7 +24,7 @@ const Resume = () => {
         <>
             <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Grid Item>
-                    <Typography sx={{ fontSize: 40 }}>Resume</Typography>
+                    <Typography sx={{ fontSize: 40, color: '#64CCC5' }}>Resume</Typography>
                 </Grid>
                 <Grid Item>
                     <HorizontalRuleRoundedIcon fontSize='large' />
@@ -32,8 +32,9 @@ const Resume = () => {
             </Grid>
             <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 20 }}>
                 <Grid Item xs={6} sx={{ width: 400 }}>
-                    <Typography textAlign='center' sx={{ fontSize: 30, mb: 3 }}>Work Experience</Typography>
-                    <List sx={{ width: '100%', bgcolor: '#2f6163', borderRadius: 10 }}>
+                    <Typography textAlign='center' sx={{ fontSize: 30, mb: 3, color: '#3AA6B9' }}>Work Experience</Typography>
+                    {/* <List sx={{ width: '100%', bgcolor: '#2f6163'}}> */}
+                    <List sx={{ width: '100%', bgcolor: 'transparent' }}>
                         <ListItemButton onClick={() => setOpen(true)}>
                             <ListItem>
                                 <ListItemAvatar>
@@ -93,8 +94,8 @@ const Resume = () => {
                     </List>
                 </Grid>
                 <Grid Item xs={6} sx={{ width: 400 }}>
-                    <Typography textAlign='center' sx={{ fontSize: 30, mb: 3 }}>Education</Typography>
-                    <List sx={{ width: '100%', bgcolor: '#2f6163', borderRadius: 10 }}>
+                    <Typography textAlign='center' sx={{ fontSize: 30, mb: 3, color: '#3AA6B9' }}>Education</Typography>
+                    <List sx={{ width: '100%', bgcolor: 'transparent' }}>
                         <ListItem sx={{m:1}}>
                             <ListItemAvatar>
                                 <Avatar alt="Searce Inc" src={viitLogo} sx={{ bgcolor: 'black', width: 45, height: 45 }} />

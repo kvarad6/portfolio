@@ -9,11 +9,13 @@ function App() {
   return (
     <>
       <Header />
-      <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'space-between', mt: 8}}>
-        <Grid Item xs={12} sx={{ backgroundColor:'#2f6163'}}>
+      <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'space-between', mt: 8, backgroundColor: '#053B50'}}>
+        <Grid Item xs={12}>
           <Title />
         </Grid>
-        <Grid Item xs={12} sx={{ backgroundColor: '#72a6a8' }}>
+        {/* <Grid Item xs={12} sx={{ backgroundColor: '#72a6a8' }}> */}
+        {/* <Grid Item xs={12} sx={{ backgroundColor: '#2f6163' }}> */}
+        <Grid Item xs={12}>
           <Body />
         </Grid>
       </Grid>

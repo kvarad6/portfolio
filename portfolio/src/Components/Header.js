@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBar elevation={0} position='fixed' sx={{ backgroundColor: '#2f6163', boxShadow: 'none' }}>
+      <AppBar elevation={0} position='fixed' sx={{ backgroundColor: '#053B50', boxShadow: 'none' }}>
         <Toolbar>
           <KeyboardArrowLeftIcon />
           <Typography sx={{ color: '#40c7cf', fontWeight: 500, fontSize: 20 }}>Varad Kulkarni <span style={{ color: 'white' }}>/</span></Typography>

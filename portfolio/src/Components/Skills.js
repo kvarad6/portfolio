@@ -21,73 +21,73 @@ const Skills = () => {
         <>
             <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Grid Item>
-                    <Typography sx={{ textAlign: 'center', fontSize: 40 }}>My Tech Stack</Typography>
+                    <Typography sx={{ textAlign: 'center', fontSize: 40, color: '#64CCC5' }}>My Tech Stack</Typography>
                 </Grid>
                 <Grid Item>
                     <HorizontalRuleRoundedIcon fontSize='large' />
                 </Grid>
             </Grid>
-            <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 4, m: 4 }}>
+            <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 8, m: 4 }}>
                 <Grid item xs={2}>
                     <Tooltip title='C' placement="top">
-                        <Avatar alt="C" src={cLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="C" src={cLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='HTML' placement="top">
-                        <Avatar alt="HTML" src={htmlLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="HTML" src={htmlLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='CSS' placement="top">
-                        <Avatar alt="CSS" src={cssLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="CSS" src={cssLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='Github' placement="top">
-                        <Avatar alt="Github" src={githubLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="Github" src={githubLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='Git' placement="top">
-                        <Avatar alt="Git" src={gitLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="Git" src={gitLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='Python' placement="top">
-                        <Avatar alt="Python" src={pythonLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="Python" src={pythonLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
             </Grid>
-            <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 4, m: 6 }}>
+            <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 8, m: 6 }}>
                 <Grid item xs={2}>
                     <Tooltip title='FastAPI' placement="bottom">
-                        <Avatar alt="FastAPI" src={fastapiLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="FastAPI" src={fastapiLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='JIRA' placement="bottom">
-                        <Avatar alt="JIRA" src={jiraLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="JIRA" src={jiraLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='Node JS' placement="bottom">
-                        <Avatar alt="Node JS" src={nodeLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="Node JS" src={nodeLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='MUI' placement="bottom">
-                        <Avatar alt="MUI" src={muiLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="MUI" src={muiLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='MySQL' placement="bottom">
-                        <Avatar alt="MySQL" src={mysqlLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="MySQL" src={mysqlLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='MongoDB' placement="bottom">
-                        <Avatar alt="MongoDB" src={mongodbLogo} sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="MongoDB" src={mongodbLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
             </Grid>
