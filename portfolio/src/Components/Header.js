@@ -1,11 +1,14 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography, Tabs, Tab } from '@mui/material'
-// import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';  
+import { AppBar, Toolbar, Typography } from '@mui/material'
+// import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+// import DrawerComponent from './DrawerComponent';
+
 
 const Header = () => {
-  const pages = ["Home", "About", "Resume", "Projects", "Contact"]
+  // const pages = ["Home", "About", "Resume", "Projects", "Contact"]
+  // const [value, setValue] = React.useState();
 
   return (
     <>
@@ -14,15 +17,28 @@ const Header = () => {
           <KeyboardArrowLeftIcon />
           <Typography sx={{ color: '#40c7cf', fontWeight: 500, fontSize: 20 }}>Varad Kulkarni <span style={{ color: 'white' }}>/</span></Typography>
           <KeyboardArrowRightIcon />
-          <Tabs sx={{ marginLeft: 'auto' }} indicatorColor='secondary'>
+          {/* <Tabs sx={{ marginLeft: 'auto' }} value={value} onChange={(e, value) => setValue(value)} indicatorColor='secondary'>
             {
               pages.map((page, index) => (
-                <Tab sx={{ color: '#40c7cf' }} key={index} label={page}></Tab>
+                <Tab
+                  sx={{ color: '#40c7cf', textTransform: 'none' }}
+                  key={index}
+                  label={page}
+                >
+                </Tab>
               ))
             }
-          </Tabs>
+          </Tabs> */}
+          {/* <Tabs sx={{ marginLeft: 'auto' }}>
+            <BrowserRouter>
+              <Routes>
+                <Route path='/Projects' to={<Projects />} />
+              </Routes>
+            </BrowserRouter>
+          </Tabs> */}
         </Toolbar>
       </AppBar>
+      {/* <DrawerComponent /> */}
     </>
   )
 }

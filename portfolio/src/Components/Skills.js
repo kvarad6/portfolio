@@ -12,8 +12,12 @@ import fastapiLogo from '../static/images/logo/fastapiLogo.png'
 import jiraLogo from '../static/images/logo/jiraLogo.png'
 import nodeLogo from '../static/images/logo/nodeLogo.png'
 import muiLogo from '../static/images/logo/muiLogo.png'
-import mysqlLogo from '../static/images/logo/mysqlLogo.png'
+import flaskLogo from '../static/images/logo/flaskLogo.png'
+import apigeeLogo from '../static/images/logo/apigeeLogo.png'
 import mongodbLogo from '../static/images/logo/mongodbLogo.png'
+import gcpLogo from '../static/images/logo/gcpLogo.png'
+import djangoLogo from '../static/images/logo/djangoLogo.png'
+
 
 
 const Skills = () => {
@@ -58,6 +62,16 @@ const Skills = () => {
                         <Avatar alt="Python" src={pythonLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
                     </Tooltip>
                 </Grid>
+                <Grid item xs={2}>
+                    <Tooltip title='Flask' placement="top">
+                        <Avatar alt="Flask" src={flaskLogo} variant="rounded" sx={{ width: 60, height: 80 }} />
+                    </Tooltip>
+                </Grid>
+                <Grid item xs={2}>
+                    <Tooltip title='Django' placement="top">
+                        <Avatar alt="Django" src={djangoLogo} variant="rounded" sx={{ width: 65, height: 80 }} />
+                    </Tooltip>
+                </Grid>
             </Grid>
             <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 8, m: 6 }}>
                 <Grid item xs={2}>
@@ -72,7 +86,7 @@ const Skills = () => {
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='Node JS' placement="bottom">
-                        <Avatar alt="Node JS" src={nodeLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
+                        <Avatar alt="Node JS" src={nodeLogo} variant="rounded" sx={{ width: 60, height: 70 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
@@ -81,13 +95,18 @@ const Skills = () => {
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
-                    <Tooltip title='MySQL' placement="bottom">
-                        <Avatar alt="MySQL" src={mysqlLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
+                    <Tooltip title='Google Cloud' placement="bottom">
+                        <Avatar alt="GCP" src={gcpLogo} variant="rounded" sx={{ width: 80, height: 63 }} />
                     </Tooltip>
                 </Grid>
                 <Grid item xs={2}>
                     <Tooltip title='MongoDB' placement="bottom">
                         <Avatar alt="MongoDB" src={mongodbLogo} variant="rounded" sx={{ width: 60, height: 60 }} />
+                    </Tooltip>
+                </Grid>
+                <Grid item xs={2}>
+                    <Tooltip title='APIGEE' placement="bottom">
+                        <Avatar alt="apigee" src={apigeeLogo} variant="rounded" sx={{ width: 190, height: 65 }} />
                     </Tooltip>
                 </Grid>
             </Grid>
