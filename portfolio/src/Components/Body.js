@@ -7,6 +7,7 @@ import ContactMe from './ContactMe'
 import Skills from './Skills'
 import Certifications from './Certifications'
 
+
 const Body = () => {
     return (
         <>

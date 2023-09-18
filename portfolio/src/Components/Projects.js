@@ -39,6 +39,7 @@ const Projects = () => {
                             <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                                 <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
                                     <DescriptionIcon fontSize='large' sx={{
+                                        transition: '0.4s',
                                         fontSize: 30, color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
@@ -47,6 +48,7 @@ const Projects = () => {
                                 </Link>
                                 <Link href=" " target="_blank">
                                     <OpenInNewIcon fontSize='large' sx={{
+                                        transition: '0.4s',
                                         fontSize: 30, color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
@@ -80,6 +82,7 @@ const Projects = () => {
                                 <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
                                     <DescriptionIcon fontSize='large' sx={{
                                         fontSize: 30, color: 'black', ':hover': {
+                                            transition: '0.4s',
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
                                         }
@@ -87,6 +90,49 @@ const Projects = () => {
                                 </Link>
                                 <Link href=" " target="_blank">
                                     <OpenInNewIcon fontSize='large' sx={{
+                                        fontSize: 30, color: 'black', ':hover': {
+                                            transition: '0.4s',
+                                            boxShadow: 20, // theme.shadows[20]
+                                            color: 'white'
+                                        }
+                                    }} />
+                                </Link>
+                            </CardActions>
+
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                <Grid Item xs={4}>
+                    <Card sx={{
+                        maxWidth: 345, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                            boxShadow: 20, // theme.shadows[20]
+                            color: 'white'
+                        }
+                    }} onClick={() => setOpen(true)}>
+                        <CardActionArea>
+                            <CardContent sx={{ m: 3 }}>
+                                <Typography gutterBottom variant="h5" textAlign='center' sx={{ color: 'white' }}>
+                                    College Enquiry Chatbot
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary" textAlign='center' sx={{ color: '#00ff00' }}>
+                                    Microsoft Bot Framework | NodeJS | MongoDB | Git | JIRA
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary" textAlign='center'>
+                                </Typography>
+                            </CardContent>
+                            <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
+                                    <DescriptionIcon fontSize='large' sx={{
+                                        transition: '0.4s',
+                                        fontSize: 30, color: 'black', ':hover': {
+                                            boxShadow: 20, // theme.shadows[20]
+                                            color: 'white'
+                                        }
+                                    }} />
+                                </Link>
+                                <Link href=" " target="_blank">
+                                    <OpenInNewIcon fontSize='large' sx={{
+                                        transition: '0.4s',
                                         fontSize: 30, color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
@@ -119,6 +165,7 @@ const Projects = () => {
                             <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                                 <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
                                     <DescriptionIcon fontSize='large' sx={{
+                                        transition: '0.4s',
                                         fontSize: 30, color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
@@ -127,6 +174,7 @@ const Projects = () => {
                                 </Link>
                                 <Link href=" " target="_blank">
                                     <OpenInNewIcon fontSize='large' sx={{
+                                        transition: '0.4s',
                                         fontSize: 30, color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
@@ -159,6 +207,7 @@ const Projects = () => {
                             <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                                 <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
                                     <DescriptionIcon fontSize='large' sx={{
+                                        transition: '0.4s',
                                         fontSize: 30, color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
@@ -167,6 +216,7 @@ const Projects = () => {
                                 </Link>
                                 <Link href=" " target="_blank">
                                     <OpenInNewIcon fontSize='large' sx={{
+                                        transition: '0.4s',
                                         fontSize: 30, color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
@@ -199,6 +249,7 @@ const Projects = () => {
                             <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                                 <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
                                     <DescriptionIcon fontSize='large' sx={{
+                                        transition: '0.4s',
                                         fontSize: 30, color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
@@ -207,46 +258,7 @@ const Projects = () => {
                                 </Link>
                                 <Link href=" " target="_blank">
                                     <OpenInNewIcon fontSize='large' sx={{
-                                        fontSize: 30, color: 'black', ':hover': {
-                                            boxShadow: 20, // theme.shadows[20]
-                                            color: 'white'
-                                        }
-                                    }} />
-                                </Link>
-                            </CardActions>
-
-                        </CardActionArea>
-                    </Card>
-                </Grid>
-                <Grid Item xs={4}>
-                    <Card sx={{
-                        maxWidth: 345, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
-                            boxShadow: 20, // theme.shadows[20]
-                            color: 'white'
-                        }
-                    }} onClick={() => setOpen(true)}>
-                        <CardActionArea>
-                            <CardContent sx={{ m: 3 }}>
-                                <Typography gutterBottom variant="h5" textAlign='center' sx={{ color: 'white' }}>
-                                    College Enquiry Chatbot
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary" textAlign='center' sx={{ color: '#00ff00' }}>
-                                    Microsoft Bot Framework | NodeJS | MongoDB | Git | JIRA
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary" textAlign='center'>
-                                </Typography>
-                            </CardContent>
-                            <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-                                <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
-                                    <DescriptionIcon fontSize='large' sx={{
-                                        fontSize: 30, color: 'black', ':hover': {
-                                            boxShadow: 20, // theme.shadows[20]
-                                            color: 'white'
-                                        }
-                                    }} />
-                                </Link>
-                                <Link href=" " target="_blank">
-                                    <OpenInNewIcon fontSize='large' sx={{
+                                        transition: '0.4s',
                                         fontSize: 30, color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
