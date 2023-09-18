@@ -35,7 +35,11 @@ const Certifications = () => {
                         </CardContent>
                         <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                             <Link href="https://www.credential.net/4d6758ac-54eb-471d-8d12-3d0f4f663773" target="_blank">
-                                <OpenInNewIcon fontSize='large' sx={{ fontSize: 30, color: 'black' }} />
+                                <OpenInNewIcon fontSize='large' sx={{
+                                    fontSize: 30, color: 'black', ':hover': {
+                                        boxShadow: 20, // theme.shadows[20]
+                                        color: 'white'
+                                    } }} />
                             </Link>
                         </CardActions>
                     </Card>
@@ -54,7 +58,11 @@ const Certifications = () => {
                         </CardContent>
                         <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                             <Link href="https://partner.cloudskillsboost.google/public_profiles/9ea48476-ca51-4dca-8992-622ba244b3c7" target="_blank">
-                                <OpenInNewIcon fontSize='large' sx={{ fontSize: 30, color: 'black' }} />
+                                <OpenInNewIcon fontSize='large' sx={{
+                                    fontSize: 30, color: 'black', ':hover': {
+                                        boxShadow: 20, // theme.shadows[20]
+                                        color: 'white'
+                                    } }} />
                             </Link>
                         </CardActions>
                     </Card>

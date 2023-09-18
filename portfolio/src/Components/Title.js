@@ -4,7 +4,7 @@ import React from 'react'
 const Title = () => {
   return (
     <>
-        <Box sx={{m:10}}>
+        <Box sx={{m:15}}>
             <Typography sx={{ color: 'white', fontSize: 30 }}>Hi, I am</Typography>
             <Typography sx={{ color: 'white', fontSize: 80 }}>Varad Kulkarni</Typography>
         </Box>
