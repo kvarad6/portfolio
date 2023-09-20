@@ -8,7 +8,7 @@ import DrawerComponent from './DrawerComponent';
 
 const Header = () => {
   // const pages = ["Home", "About", "Resume", "Projects", "Contact"]
-  const pages = { 'Home': '#', 'About': '/about', 'Resume': '/resume', 'Projects': '/projects', 'Contact': '/contact' }
+  const pages = { 'Home': '#Home', 'About': '#about', 'Resume': '#resume', 'Projects': '#projects', 'Contact': '#contacts' }
   const [value, setValue] = React.useState();
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down('md'));
