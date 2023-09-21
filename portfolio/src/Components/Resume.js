@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Grid, Box } from '@mui/material'
+import { Typography, Grid, Box, useMediaQuery, useTheme } from '@mui/material'
 import HorizontalRuleRoundedIcon from '@mui/icons-material/HorizontalRuleRounded';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Dialog, DialogTitle, DialogContent, DialogContentText } from '@mui/material'
@@ -11,260 +11,499 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import { timelineItemClasses } from '@mui/lab/TimelineItem';
+
 
 
 const Resume = () => {
     const [open, setOpen] = React.useState(false);
+    const theme = useTheme();
+    const isMatch = useMediaQuery(theme.breakpoints.down('sm'));
     return (
         <>
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item>
-                        <Typography sx={{ fontSize: 40, color: '#64CCC5' }}>Resume</Typography>
+                        <Typography sx={{ fontSize: { xs: 28, md: 35, lg: 40 }, color: '#64CCC5' }}>Resume</Typography>
                     </Grid>
                     <Grid Item>
-                        <HorizontalRuleRoundedIcon fontSize='large' />
+                        <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 20, md: 30, lg: 40 } }} />
                     </Grid>
                 </Grid>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 5 }}>
                     <Grid Item xs={6}>
-                        <Typography textAlign='center' sx={{ fontSize: 30, color: '#3AA6B9' }}>Work Experience</Typography>
+                        <Typography textAlign='center' sx={{ fontSize: { xs: 23, md: 27, lg: 30 }, color: '#3AA6B9' }}>Work Experience</Typography>
                     </Grid>
                     <Grid Item xs={6}>
-                        <Timeline>
-                            <TimelineItem>
-                                <TimelineOppositeContent>
-                                    <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                        August, 22 - Present
-                                    </Typography>
-                                </TimelineOppositeContent>
-                                <TimelineSeparator>
-                                    <TimelineDot />
-                                    <TimelineConnector />
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: 'white', fontSize: 20 }}>
-                                        Software Engineer
-                                    </Typography>
-                                    <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                        Searce Inc.
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: 13 }}>
-                                        Python | FastAPI | Google Cloud Datastore | Django | Apigee | Cloud SQL | PandasAI
-                                    </Typography>
-                                    <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
-                                        <Grid Item>
-                                            <NavigateNextIcon sx={{ color: 'white' }} />
-                                        </Grid>
-                                        <Grid Item>
-                                            <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                                Developed a Document Inventory Management System with Versioning for an automobile giant.
+                        {
+                            isMatch ? (
+                                <Timeline sx={{
+                                    [`& .${timelineItemClasses.root}:before`]: {
+                                        flex: 0,
+                                        padding: 0,
+                                    },
+                                }}>
+                                    <TimelineItem>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 17, md: 18, lg: 20 } }}>
+                                                Software Engineer
                                             </Typography>
-                                        </Grid>
-                                    </Grid>
-                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
-                                        <Grid Item>
-                                            <NavigateNextIcon sx={{ color: 'white' }} />
-                                        </Grid>
-                                        <Grid Item>
-                                            <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                                Currently working on the in-house product Recognic (recognic.ai), streamlining the enterprise's document processing lifecycle.
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
+                                                August, 22 - Present
                                             </Typography>
-                                        </Grid>
-                                    </Grid>
-                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
-                                        <Grid Item>
-                                            <NavigateNextIcon sx={{ color: 'white' }} />
-                                        </Grid>
-                                        <Grid Item>
-                                            <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                                Successfully resolved critical issues, restoring the product's normal functioning.
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                Searce Inc.
                                             </Typography>
-                                        </Grid>
-                                    </Grid>
-                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
-                                        <Grid Item>
-                                            <NavigateNextIcon sx={{ color: 'white' }} />
-                                        </Grid>
-                                        <Grid Item>
-                                            <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                                Developed a system to extract useful information from CSV using LLMs and PandasAI.
+                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                                Python | FastAPI | Google Cloud Datastore | Django | Apigee | Cloud SQL | PandasAI
                                             </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </TimelineContent>
-                            </TimelineItem>
-                            <TimelineItem>
-                                <TimelineOppositeContent>
-                                    <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                        Feb, 22 - July, 22
-                                    </Typography>
-                                </TimelineOppositeContent>
-                                <TimelineSeparator>
-                                    <TimelineDot />
-                                    <TimelineConnector />
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: 'white', fontSize: 20 }}>
-                                        Software Engineer Intern
-                                    </Typography>
-                                    <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                        Searce Inc.
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: 13 }}>
-                                        Python | FastAPI | Microsoft SQL Server | MySQL
-                                    </Typography>
-                                    <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
-                                        <Grid Item>
-                                            <NavigateNextIcon sx={{ color: 'white' }} />
-                                        </Grid>
-                                        <Grid Item>
-                                            <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                                Contributed to a client project focused on database migration, from development to deployment.
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                        Developed a Document Inventory Management System with Versioning for an automobile giant.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                        Currently working on the in-house product Recognic (recognic.ai), streamlining the enterprise's document processing lifecycle.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                        Successfully resolved critical issues, restoring the product's normal functioning.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                        Developed a system to extract useful information from CSV using LLMs and PandasAI.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                    <TimelineItem>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 17, md: 18, lg: 20 } }}>
+                                                Software Engineer Intern
                                             </Typography>
-                                        </Grid>
-                                    </Grid>
-                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
-                                        <Grid Item>
-                                            <NavigateNextIcon sx={{ color: 'white' }} />
-                                        </Grid>
-                                        <Grid Item>
-                                            <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                                Achieved certification as a Google Cloud - Associate Cloud Engineer.
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
+                                                Feb, 22 - July, 22
                                             </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </TimelineContent>
-                            </TimelineItem>
-                            <TimelineItem>
-                                <TimelineOppositeContent>
-                                    <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                        July, 21 - December, 21
-                                    </Typography>
-                                </TimelineOppositeContent>
-                                <TimelineSeparator>
-                                    <TimelineDot />
-                                    <TimelineConnector />
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: 'white', fontSize: 20 }}>
-                                        Project Intern
-                                    </Typography>
-                                    <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                        Tejgyan Foundation (TCS-TGF)
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: 13 }}>
-                                        HTML | CSS | Python | Flask
-                                    </Typography>
-                                    <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
-                                        <Grid Item>
-                                            <NavigateNextIcon sx={{ color: 'white' }} />
-                                        </Grid>
-                                        <Grid Item>
-                                            <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                                Worked on the TGF Chatbot (Microsoft Bot Framework) with over 10,000 users.
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                Searce Inc.
                                             </Typography>
-                                        </Grid>
-                                    </Grid>
-                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
-                                        <Grid Item>
-                                            <NavigateNextIcon sx={{ color: 'white' }} />
-                                        </Grid>
-                                        <Grid Item>
-                                            <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                                Added various features / functionalities & improved accuracy from 70% to 95%.
+                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                                Python | FastAPI | Microsoft SQL Server | MySQL
                                             </Typography>
-                                        </Grid>
-                                    </Grid>
-                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
-                                        <Grid Item>
-                                            <NavigateNextIcon sx={{ color: 'white' }} />
-                                        </Grid>
-                                        <Grid Item>
-                                            <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                                Developed a Data Retrieval System, reducing manual efforts for internal staff.
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                        Contributed to a client project focused on database migration, from development to deployment.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                        Achieved certification as a Google Cloud - Associate Cloud Engineer.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                    <TimelineItem>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 17, md: 18, lg: 20 } }}>
+                                                Project Intern
                                             </Typography>
-                                        </Grid>
-                                    </Grid>
-                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
-                                        <Grid Item>
-                                            <NavigateNextIcon sx={{ color: 'white' }} />
-                                        </Grid>
-                                        <Grid Item>
-                                            <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                                Managed projects using development technologies like JIRA and Git within an Agile framework
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
+                                                July, 21 - December, 21
                                             </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </TimelineContent>
-                            </TimelineItem>
-                        </Timeline>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                Tejgyan Foundation (TCS-TGF)
+                                            </Typography>
+                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                                HTML | CSS | Python | Flask
+                                            </Typography>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                        Worked on the TGF Chatbot (Microsoft Bot Framework) with over 10,000 users.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                        Added various features / functionalities & improved accuracy from 70% to 95%.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                        Developed a Data Retrieval System, reducing manual efforts for internal staff.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                        Managed projects using development technologies like JIRA and Git within an Agile framework
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                </Timeline>
+                            ) : (
+                                <Timeline>
+                                    <TimelineItem>
+                                        <TimelineOppositeContent>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
+                                                August, 22 - Present
+                                            </Typography>
+                                        </TimelineOppositeContent>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 15, md: 18, lg: 20 } }}>
+                                                Software Engineer
+                                            </Typography>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                Searce Inc.
+                                            </Typography>
+                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                                Python | FastAPI | Google Cloud Datastore | Django | Apigee | Cloud SQL | PandasAI
+                                            </Typography>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        Developed a Document Inventory Management System with Versioning for an automobile giant.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        Currently working on the in-house product Recognic (recognic.ai), streamlining the enterprise's document processing lifecycle.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        Successfully resolved critical issues, restoring the product's normal functioning.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        Developed a system to extract useful information from CSV using LLMs and PandasAI.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                    <TimelineItem>
+                                        <TimelineOppositeContent>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
+                                                Feb, 22 - July, 22
+                                            </Typography>
+                                        </TimelineOppositeContent>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 15, md: 18, lg: 20 } }}>
+                                                Software Engineer Intern
+                                            </Typography>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                Searce Inc.
+                                            </Typography>
+                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                                Python | FastAPI | Microsoft SQL Server | MySQL
+                                            </Typography>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        Contributed to a client project focused on database migration, from development to deployment.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        Achieved certification as a Google Cloud - Associate Cloud Engineer.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                    <TimelineItem>
+                                        <TimelineOppositeContent>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
+                                                July, 21 - December, 21
+                                            </Typography>
+                                        </TimelineOppositeContent>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 15, md: 18, lg: 20 } }}>
+                                                Project Intern
+                                            </Typography>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                Tejgyan Foundation (TCS-TGF)
+                                            </Typography>
+                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                                HTML | CSS | Python | Flask
+                                            </Typography>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        Worked on the TGF Chatbot (Microsoft Bot Framework) with over 10,000 users.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        Added various features / functionalities & improved accuracy from 70% to 95%.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        Developed a Data Retrieval System, reducing manual efforts for internal staff.
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                            <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                <Grid Item>
+                                                    <NavigateNextIcon sx={{ color: 'white' }} />
+                                                </Grid>
+                                                <Grid Item>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        Managed projects using development technologies like JIRA and Git within an Agile framework
+                                                    </Typography>
+                                                </Grid>
+                                            </Grid>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                </Timeline>
+                            )
+                        }
                     </Grid>
                 </Grid>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item xs={6}>
-                        <Typography textAlign='center' sx={{ fontSize: 30, color: '#3AA6B9' }}>Education</Typography>
+                        <Typography textAlign='center' sx={{ fontSize: { xs: 23, md: 27, lg: 30 }, color: '#3AA6B9' }}>Education</Typography>
                     </Grid>
                     <Grid Item xs={6} sx={{ width: '100%' }}>
-                        <Timeline>
-                            <TimelineItem>
-                                <TimelineOppositeContent>
-                                    <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                        2018 - 2022
-                                    </Typography>
-                                </TimelineOppositeContent>
-                                <TimelineSeparator>
-                                    <TimelineDot />
-                                    <TimelineConnector />
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: 'white', fontSize: 20 }}>
-                                        Vishwakarma Institute of Information Technology, Pune
-                                    </Typography>
-                                    <Typography sx={{ color: '#00ff00', fontSize: 15 }}>
-                                        B. Tech - Information Technology | CGPA: 9.35
-                                    </Typography>
-                                </TimelineContent>
-                            </TimelineItem>
-                            <TimelineItem>
-                                <TimelineOppositeContent>
-                                    <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                        2016 - 2018
-                                    </Typography>
-                                </TimelineOppositeContent>
-                                <TimelineSeparator>
-                                    <TimelineDot />
-                                    <TimelineConnector />
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: 'white', fontSize: 20 }}>
-                                        Narayana Junior College, Hyderabad
-                                    </Typography>
-                                    <Typography sx={{ color: '#00ff00', fontSize: 15 }}>
-                                        HSC (Intermediate) - PCM | Marks (in %): 97.2
-                                    </Typography>
-                                </TimelineContent>
-                            </TimelineItem>
-                            <TimelineItem>
-                                <TimelineOppositeContent>
-                                    <Typography sx={{ color: 'white', fontSize: 15 }}>
-                                        2015 - 2016
-                                    </Typography>
-                                </TimelineOppositeContent>
-                                <TimelineSeparator>
-                                    <TimelineDot />
-                                    <TimelineConnector />
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: 'white', fontSize: 20 }}>
-                                        Jawahar Navodaya Vidyalaya, Parbhani
-                                    </Typography>
-                                    <Typography sx={{ color: '#00ff00', fontSize: 15 }}>
-                                        SSC (CBSE) | Marks (in %): 94.2
-                                    </Typography>
-                                </TimelineContent>
-                            </TimelineItem>
-                        </Timeline>
+                        {
+                            isMatch ? (
+                                <Timeline sx={{
+                                    [`& .${timelineItemClasses.root}:before`]: {
+                                        flex: 0,
+                                        padding: 0,
+                                    },
+                                }}>
+                                    <TimelineItem>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 17, md: 18, lg: 20 } }}>
+                                                Vishwakarma Institute of Information Technology, Pune
+                                            </Typography>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 14, lg: 15 } }}>
+                                                2018 - 2022
+                                            </Typography>
+                                            <Typography sx={{ color: '#00ff00', fontSize: { xs: 13, md: 13, lg: 15 } }}>
+                                                B. Tech - Information Technology | CGPA: 9.35
+                                            </Typography>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                    <TimelineItem>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 17, md: 18, lg: 20 } }}>
+                                                Narayana Junior College, Hyderabad
+                                            </Typography>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 14, lg: 15 } }}>
+                                                2016 - 2018
+                                            </Typography>
+                                            <Typography sx={{ color: '#00ff00', fontSize: { xs: 13, md: 13, lg: 15 } }}>
+                                                HSC (Intermediate) - PCM | Marks (in %): 97.2
+                                            </Typography>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                    <TimelineItem>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 17, md: 18, lg: 20 } }}>
+                                                Jawahar Navodaya Vidyalaya, Parbhani
+                                            </Typography>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 14, lg: 15 } }}>
+                                                2015 - 2016
+                                            </Typography>
+                                            <Typography sx={{ color: '#00ff00', fontSize: { xs: 13, md: 13, lg: 15 } }}>
+                                                SSC (CBSE) | Marks (in %): 94.2
+                                            </Typography>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                </Timeline>
+                            ) : (
+                                <Timeline>
+                                    <TimelineItem>
+                                        <TimelineOppositeContent>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
+                                                2018 - 2022
+                                            </Typography>
+                                        </TimelineOppositeContent>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 15, md: 18, lg: 20 } }}>
+                                                Vishwakarma Institute of Information Technology, Pune
+                                            </Typography>
+                                            <Typography sx={{ color: '#00ff00', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                B. Tech - Information Technology | CGPA: 9.35
+                                            </Typography>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                    <TimelineItem>
+                                        <TimelineOppositeContent>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
+                                                2016 - 2018
+                                            </Typography>
+                                        </TimelineOppositeContent>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 15, md: 18, lg: 20 } }}>
+                                                Narayana Junior College, Hyderabad
+                                            </Typography>
+                                            <Typography sx={{ color: '#00ff00', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                HSC (Intermediate) - PCM | Marks (in %): 97.2
+                                            </Typography>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                    <TimelineItem>
+                                        <TimelineOppositeContent>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
+                                                2015 - 2016
+                                            </Typography>
+                                        </TimelineOppositeContent>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent sx={{ mb: 4 }}>
+                                            <Typography sx={{ color: 'white', fontSize: { xs: 15, md: 18, lg: 20 } }}>
+                                                Jawahar Navodaya Vidyalaya, Parbhani
+                                            </Typography>
+                                            <Typography sx={{ color: '#00ff00', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                SSC (CBSE) | Marks (in %): 94.2
+                                            </Typography>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                </Timeline>
+                            )
+                        }
                     </Grid>
                 </Grid>
             </Box>

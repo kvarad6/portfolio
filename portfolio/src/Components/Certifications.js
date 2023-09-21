@@ -13,22 +13,22 @@ const Certifications = () => {
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item>
-                        <Typography sx={{ fontSize: 40, color: '#64CCC5' }}>Certifications</Typography>
+                        <Typography sx={{ fontSize: { xs: 28, md: 35, lg: 40 }, color: '#64CCC5' }}>Certifications</Typography>
                     </Grid>
                     <Grid Item>
-                        <HorizontalRuleRoundedIcon fontSize='large' />
+                        <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 20, md: 30, lg: 40 } }} />
                     </Grid>
                 </Grid>
                 <Grid sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
                     <Grid Item xs={6}>
-                        <Card sx={{ backgroundColor: '#0A4D68' }}>
+                        <Card sx={{ backgroundColor: '#0A4D68', width: { xs: 300, md: 330, lg: 350 }, height: { xs: 310, md: 350, lg: 370 } }}>
                             <CardMedia
-                                sx={{ width: 400, height: 300 }}
+                                sx={{ width: { xs: 300, md: 330, lg: 350 }, height: { xs: 210, md: 240, lg: 260 } }}
                                 image={ACE}
                                 title="ACE Certificate"
                             />
                             <CardContent>
-                                <Typography variant="h6" textAlign='center' sx={{ color: 'white' }}>
+                                <Typography textAlign='center' sx={{ color: 'white', fontSize: { xs: 16, md: 18, lg: 20 } }}>
                                     Associate Cloud Engineer
                                 </Typography>
                             </CardContent>
@@ -36,7 +36,7 @@ const Certifications = () => {
                                 <Link href="https://www.credential.net/4d6758ac-54eb-471d-8d12-3d0f4f663773" target="_blank">
                                     <OpenInNewIcon fontSize='large' sx={{
                                         transition: '0.4s',
-                                        fontSize: 30, color: 'black', ':hover': {
+                                        fontSize: { xs: 22, md: 26, lg: 30 }, color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
                                         }
@@ -46,14 +46,14 @@ const Certifications = () => {
                         </Card>
                     </Grid>
                     <Grid Item xs={6}>
-                        <Card sx={{ backgroundColor: '#0A4D68' }}>
+                        <Card sx={{ backgroundColor: '#0A4D68', width: { xs: 300, md: 330, lg: 350 }, height: { xs: 310, md: 350, lg: 370 } }}>
                             <CardMedia
-                                sx={{ width: 400, height: 300 }}
+                                sx={{ width: { xs: 300, md: 330, lg: 350 }, height: { xs: 210, md: 240, lg: 260 } }}
                                 image={GenAI}
                                 title="GenAI Badges"
                             />
                             <CardContent>
-                                <Typography variant="h6" textAlign='center' sx={{ color: 'white' }}>
+                                <Typography variant="h6" textAlign='center' sx={{ color: 'white', fontSize: { xs: 16, md: 18, lg: 20 } }}>
                                     GenAI Badges & Certifications
                                 </Typography>
                             </CardContent>
@@ -61,7 +61,8 @@ const Certifications = () => {
                                 <Link href="https://partner.cloudskillsboost.google/public_profiles/9ea48476-ca51-4dca-8992-622ba244b3c7" target="_blank">
                                     <OpenInNewIcon fontSize='large' sx={{
                                         transition: '0.4s',
-                                        fontSize: 30, color: 'black', ':hover': {
+                                        fontSize: { xs: 22, md: 26, lg: 30 },
+                                        color: 'black', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
                                         }

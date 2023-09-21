@@ -9,7 +9,7 @@ const ContactMe = () => {
     return (
         <>
             <Box>
-                <Typography sx={{ textAlign: 'center', fontSize: 40, color: '#64CCC5' }}>Let's Connect</Typography>
+                <Typography sx={{ textAlign: 'center', fontSize: { xs: 28, md: 35, lg: 40 }, color: '#64CCC5' }}>Let's Connect</Typography>
                 <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 5, m: 3 }}>
                     <Grid Item xs={3}>
                         <Link href="https://www.linkedin.com/in/varad-kulkarni-2001/" target="_blank">
