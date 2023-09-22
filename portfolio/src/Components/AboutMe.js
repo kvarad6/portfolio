@@ -21,11 +21,11 @@ const AboutMe = () => {
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down('sm'));
     return (
-        <>
+        <div id="about">
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item xs={12}>
-                        <Typography sx={{ textAlign: 'center', fontSize: { xs: 28, md: 35, lg: 40 }, color: '#64CCC5' }}>About Me</Typography>
+                        <Typography sx={{ textAlign: 'center', fontSize: { xs: 28, md: 30, lg: 33 }, color: '#97FEED' }}>About Me</Typography>
                     </Grid>
                     <Grid Item xs={12}>
                         <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 20, md: 30, lg: 40 } }} />
@@ -73,8 +73,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 15, md: 16, lg: 17 } }}>
-                                        Hey there! Thanks for stopping by my little corner of the internet. I'm Varad Kulkarni, a passionate software engineer who has been riding the IT rollercoaster for a thrilling year now. 🖥️ My journey in the world of technology has been nothing short of exhilarating, and I'm here to share a glimpse of my story with you.</Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 15, md: 16, lg: 17 } }}>
+                                        Hey there! Thanks for stopping by my little corner of the internet. I'm Varad Kulkarni, a passionate software engineer who has been riding the IT rollercoaster for a thrilling year now. My journey in the world of technology has been nothing short of exhilarating, and I'm here to share a glimpse of my story with you.</Typography>
                                 </TimelineContent>
                             </TimelineItem>
                             <TimelineItem>
@@ -85,8 +85,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 15, md: 16, lg: 17 } }}>
-                                        Code Whisperer: In the realm of ones and zeros, I'm the code whisperer, crafting digital wonders and solving real-world puzzles. Whether it's crafting elegant algorithms or building robust applications, I thrive on the thrill of creating software that makes lives easier and more efficient. 💻</Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 15, md: 16, lg: 17 } }}>
+                                        <span style={{ color: "#97FEED" }}>Code Whisperer:</span> In the realm of ones and zeros, I'm the code whisperer, crafting digital wonders and solving real-world puzzles. Whether it's crafting elegant algorithms or building robust applications, I thrive on the thrill of creating software that makes lives easier and more efficient.</Typography>
                                 </TimelineContent>
                             </TimelineItem>
                             <TimelineItem>
@@ -97,8 +97,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 15, md: 16, lg: 17 } }}>
-                                        Sports Enthusiast: When I'm not immersed in lines of code, you'll likely find me on the field, court, or track, chasing that adrenaline rush. Sports are my sanctuary, where I push my limits, foster teamwork, and savor the sweet taste of victory. From basketball's swish to the thrill of a finish line, I'm always up for the challenge. 🏆 </Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 15, md: 16, lg: 17 } }}>
+                                        <span style={{ color: "#97FEED" }}>Sports Enthusiast:</span> When I'm not immersed in lines of code, you'll likely find me on the field, court, or track, chasing that adrenaline rush. Sports are my sanctuary, where I push my limits, foster teamwork, and savor the sweet taste of victory. From basketball's swish to the thrill of a finish line, I'm always up for the challenge. 🏆 </Typography>
                                 </TimelineContent>
                             </TimelineItem>
                             <TimelineItem>
@@ -109,8 +109,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 15, md: 16, lg: 17 } }}>
-                                        Capturing Moments: Beyond the digital world, I have a deep appreciation for capturing life's precious moments through the lens. Photography is my way of freezing time and sharing stories through visuals. Whether it's a breathtaking sunset or candid shots of friends, I believe every picture has a unique tale to tell. 📸</Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 15, md: 16, lg: 17 } }}>
+                                        <span style={{ color: "#97FEED" }}>Capturing Moments:</span> Beyond the digital world, I have a deep appreciation for capturing life's precious moments through the lens. Photography is my way of freezing time and sharing stories through visuals. Whether it's a breathtaking sunset or candid shots of friends, I believe every picture has a unique tale to tell. 📸</Typography>
                                 </TimelineContent>
                             </TimelineItem>
                             <TimelineItem>
@@ -121,8 +121,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 15, md: 16, lg: 17 } }}>
-                                        Celebrating Milestones:As I celebrate my first year in the IT industry, I can't help but feel grateful for the incredible opportunities, the fantastic people I've met, and the growth I've experienced. The future holds limitless possibilities, and I'm excited to continue this amazing journey, turning code into innovation and dreams into reality. </Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 15, md: 16, lg: 17 } }}>
+                                        <span style={{ color: "#97FEED" }}>Celebrating Milestones:</span> As I celebrate my first year in the IT industry, I can't help but feel grateful for the incredible opportunities, the fantastic people I've met, and the growth I've experienced. The future holds limitless possibilities, and I'm excited to continue this amazing journey, turning code into innovation and dreams into reality. </Typography>
                                 </TimelineContent>
                             </TimelineItem>
                             <TimelineItem>
@@ -133,8 +133,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 15, md: 16, lg: 17 } }}>
-                                        Let's Connect: If you share my passion for technology, the thrill of sports, or the art of storytelling through photography, let's connect and embark on new adventures together. Whether it's collaborating on a coding project, hitting the sports field, or exploring the world through a camera lens, I'm always up for the next great adventure. </Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 15, md: 16, lg: 17 } }}>
+                                        <span style={{ color: "#97FEED" }}>Let's Connect:</span> If you share my passion for technology, the thrill of sports, or the art of storytelling through photography, let's connect and embark on new adventures together. Whether it's collaborating on a coding project, hitting the sports field, or exploring the world through a camera lens, I'm always up for the next great adventure. </Typography>
                                 </TimelineContent>
                             </TimelineItem>
                         </Timeline>
@@ -148,7 +148,7 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 12, md: 14, lg: 16 } }}>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 12, md: 14, lg: 16 } }}>
                                         Hey there! Thanks for stopping by my little corner of the internet. I'm Varad Kulkarni, a passionate software engineer who has been riding the IT rollercoaster for a thrilling year now. 🖥️ My journey in the world of technology has been nothing short of exhilarating, and I'm here to share a glimpse of my story with you.</Typography>
                                 </TimelineContent>
                             </TimelineItem>
@@ -160,8 +160,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 12, md: 14, lg: 16 } }}>
-                                        Code Whisperer: In the realm of ones and zeros, I'm the code whisperer, crafting digital wonders and solving real-world puzzles. Whether it's crafting elegant algorithms or building robust applications, I thrive on the thrill of creating software that makes lives easier and more efficient. 💻</Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 12, md: 14, lg: 16 } }}>
+                                        <span style={{ color: "#97FEED" }}>Code Whisperer:</span> In the realm of ones and zeros, I'm the code whisperer, crafting digital wonders and solving real-world puzzles. Whether it's crafting elegant algorithms or building robust applications, I thrive on the thrill of creating software that makes lives easier and more efficient. 💻</Typography>
                                 </TimelineContent>
                             </TimelineItem>
                             <TimelineItem>
@@ -172,8 +172,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 12, md: 14, lg: 16 } }}>
-                                        Sports Enthusiast: When I'm not immersed in lines of code, you'll likely find me on the field, court, or track, chasing that adrenaline rush. Sports are my sanctuary, where I push my limits, foster teamwork, and savor the sweet taste of victory. From basketball's swish to the thrill of a finish line, I'm always up for the challenge. 🏆 </Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 12, md: 14, lg: 16 } }}>
+                                        <span style={{ color: "#97FEED" }}>Sports Enthusiast:</span> When I'm not immersed in lines of code, you'll likely find me on the field, court, or track, chasing that adrenaline rush. Sports are my sanctuary, where I push my limits, foster teamwork, and savor the sweet taste of victory. From basketball's swish to the thrill of a finish line, I'm always up for the challenge. 🏆 </Typography>
                                 </TimelineContent>
                             </TimelineItem>
                             <TimelineItem>
@@ -184,8 +184,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 12, md: 14, lg: 16 } }}>
-                                        Capturing Moments: Beyond the digital world, I have a deep appreciation for capturing life's precious moments through the lens. Photography is my way of freezing time and sharing stories through visuals. Whether it's a breathtaking sunset or candid shots of friends, I believe every picture has a unique tale to tell. 📸</Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 12, md: 14, lg: 16 } }}>
+                                        <span style={{ color: "#97FEED" }}>Capturing Moments:</span> Beyond the digital world, I have a deep appreciation for capturing life's precious moments through the lens. Photography is my way of freezing time and sharing stories through visuals. Whether it's a breathtaking sunset or candid shots of friends, I believe every picture has a unique tale to tell. 📸</Typography>
                                 </TimelineContent>
                             </TimelineItem>
                             <TimelineItem>
@@ -196,8 +196,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 12, md: 14, lg: 16 } }}>
-                                        Celebrating Milestones:As I celebrate my first year in the IT industry, I can't help but feel grateful for the incredible opportunities, the fantastic people I've met, and the growth I've experienced. The future holds limitless possibilities, and I'm excited to continue this amazing journey, turning code into innovation and dreams into reality. </Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 12, md: 14, lg: 16 } }}>
+                                        <span style={{ color: "#97FEED" }}>Celebrating Milestones:</span> As I celebrate my first year in the IT industry, I can't help but feel grateful for the incredible opportunities, the fantastic people I've met, and the growth I've experienced. The future holds limitless possibilities, and I'm excited to continue this amazing journey, turning code into innovation and dreams into reality. </Typography>
                                 </TimelineContent>
                             </TimelineItem>
                             <TimelineItem>
@@ -208,8 +208,8 @@ const AboutMe = () => {
                                     <TimelineConnector />
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ mb: 4 }}>
-                                    <Typography sx={{ color: '#3AA6B9', fontSize: { xs: 12, md: 14, lg: 16 } }}>
-                                        Let's Connect: If you share my passion for technology, the thrill of sports, or the art of storytelling through photography, let's connect and embark on new adventures together. Whether it's collaborating on a coding project, hitting the sports field, or exploring the world through a camera lens, I'm always up for the next great adventure. </Typography>
+                                    <Typography sx={{ color: '#5CD2E6', fontSize: { xs: 12, md: 14, lg: 16 } }}>
+                                        <span style={{ color: "#97FEED" }}>Let's Connect:</span> If you share my passion for technology, the thrill of sports, or the art of storytelling through photography, let's connect and embark on new adventures together. Whether it's collaborating on a coding project, hitting the sports field, or exploring the world through a camera lens, I'm always up for the next great adventure. </Typography>
                                 </TimelineContent>
                             </TimelineItem>
                         </Timeline>
@@ -217,7 +217,7 @@ const AboutMe = () => {
                 }
 
             </Box>
-        </>
+        </div>
     )
 }
 

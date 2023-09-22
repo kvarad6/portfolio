@@ -1,30 +1,50 @@
 import React from 'react'
-import { Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, SwipeableDrawer } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import CancelIcon from '@mui/icons-material/Cancel';
 
 const DrawerComponent = () => {
     const [openDrawer, setOpenDrawer] = React.useState(false);
-    const pages = ["Home", "About", "Resume", "Projects", "Contact"]
+    const pages = { 'Home': '#home', 'About': '#about', 'Resume': '#resume', 'Projects': '#projects', 'Certifications': '#certifications', 'Publications': '#publications', 'Contact': '#contacts' }
 
     return (
         <>
-            <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
-                <List sx={{ backgroundColor: '#053B50', width:300, height: '100%'}}>
+            <SwipeableDrawer anchor={"right"} open={openDrawer} onClose={() => setOpenDrawer(false)}>
+                <List sx={{ backgroundColor: '#053B50', width: 300, height: '100%' }}>
+                    <ListItem sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                        <IconButton onClick={() => setOpenDrawer(false)} sx={{
+                            color: '#97FEED', alignSelf: 'flex-end', ':hover': {
+                                color: 'white'
+                            }
+                        }}>
+                            <CancelIcon />
+                        </IconButton>
                         {
-                            pages.map((page, index) => (
-                                <ListItemButton onClick={() => setOpenDrawer(false)} key={index} sx={{display: 'flex', flexDirection: 'column', alignItems:'center', m:3}}>
+                            Object.entries(pages).map(([key, value]) => (
+                                <ListItemButton
+                                    onClick={() => setOpenDrawer(false)}
+                                    key={key}
+                                    label={key}
+                                    href={value}>
                                     <ListItemIcon>
-                                        <ListItemText sx={{ color: '#40c7cf', fontSize:200}}>
-                                            {page}
+                                        <ListItemText
+                                            sx={{
+                                                color: '#97FEED',
+                                                ':hover': {
+                                                    color: 'white'
+                                                }
+                                            }}>
+                                            {key}
                                         </ListItemText>
                                     </ListItemIcon>
                                 </ListItemButton>
                             ))
-                        }                    
+                        }
+                    </ListItem>
                 </List>
-            </Drawer>
+            </SwipeableDrawer>
             <IconButton onClick={() => setOpenDrawer(!openDrawer)} sx={{ ml: 'auto' }}>
-                <MenuIcon sx={{ color: '#40c7cf' }} />
+                <MenuIcon sx={{ color: '#5CD2E6' }} />
             </IconButton>
         </>
     )

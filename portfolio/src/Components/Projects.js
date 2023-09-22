@@ -14,11 +14,11 @@ const Projects = () => {
     const [openCard5, setOpenCard5] = useState(false);
 
     return (
-        <>
+        <div id="projects">
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item>
-                        <Typography sx={{ fontSize: { xs: 28, md: 35, lg: 40 }, color: '#64CCC5' }}>Projects</Typography>
+                        <Typography sx={{ fontSize: { xs: 28, md: 30, lg: 33 }, color: '#97FEED' }}>Projects</Typography>
                     </Grid>
                     <Grid Item>
                         <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 20, md: 30, lg: 40 } }} />
@@ -27,17 +27,17 @@ const Projects = () => {
                 <Grid sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
                     <Grid Item xs={4}>
                         <Card sx={{
-                            height: { xs: 150, md: 170, lg: 210 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
                                 boxShadow: 20,
                                 color: 'white'
                             }
                         }} onClick={() => setOpen(true)}>
-                            <CardActionArea>
+                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
                                 <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 16, md: 19, lg: 23 }, color: 'white' }}>
+                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
                                         College Enquiry Chatbot
                                     </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 10, md: 12, lg: 14 }, color: '#00ff00' }}>
+                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
                                         Microsoft Bot Framework | NodeJS | MongoDB | Git | JIRA
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign='center'>
@@ -47,7 +47,7 @@ const Projects = () => {
                                     <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
                                         <DescriptionIcon fontSize='large' sx={{
                                             transition: '0.4s',
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 boxShadow: 20,
                                                 color: 'white'
                                             }
@@ -56,7 +56,7 @@ const Projects = () => {
                                     <Link href=" " target="_blank">
                                         <OpenInNewIcon fontSize='large' sx={{
                                             transition: '0.4s',
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 boxShadow: 20,
                                                 color: 'white'
                                             }
@@ -69,17 +69,17 @@ const Projects = () => {
                     </Grid>
                     <Grid Item xs={4}>
                         <Card sx={{
-                            height: { xs: 150, md: 170, lg: 210 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
                                 boxShadow: 20,
                                 color: 'white'
                             }
                         }} onClick={() => setOpenCard2(true)}>
-                            <CardActionArea>
+                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
                                 <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 16, md: 19, lg: 23 }, color: 'white' }}>
+                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
                                         Recommendation System
                                     </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 10, md: 12, lg: 14 }, color: '#00ff00' }}>
+                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
                                         Python | Machine Learning
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign='center'>
@@ -88,7 +88,7 @@ const Projects = () => {
                                 <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', mb: 4 }}>
                                     <Link href="https://ssrn.com/abstract=3833762" target="_blank">
                                         <DescriptionIcon fontSize='large' sx={{
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 transition: '0.4s',
                                                 boxShadow: 20,
                                                 color: 'white'
@@ -97,7 +97,7 @@ const Projects = () => {
                                     </Link>
                                     <Link href="https://github.com/kvarad6/Recommendation-System-for-Workers-Customers" target="_blank">
                                         <GitHubIcon fontSize='large' sx={{
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 transition: '0.4s',
                                                 boxShadow: 20,
                                                 color: 'white'
@@ -111,17 +111,17 @@ const Projects = () => {
                     </Grid>
                     <Grid Item xs={4}>
                         <Card sx={{
-                            height: { xs: 150, md: 170, lg: 210 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
                                 boxShadow: 20,
                                 color: 'white'
                             }
                         }} onClick={() => setOpenCard3(true)}>
-                            <CardActionArea>
+                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
                                 <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 16, md: 19, lg: 23 }, color: 'white' }}>
+                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
                                         Portfolio
                                     </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 10, md: 12, lg: 14 }, color: '#00ff00' }}>
+                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
                                         React | Material UI | HTML | CSS | Javascript
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign='center'>
@@ -131,7 +131,7 @@ const Projects = () => {
                                     <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
                                         <GitHubIcon fontSize='large' sx={{
                                             transition: '0.4s',
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 boxShadow: 20,
                                                 color: 'white'
                                             }
@@ -140,7 +140,7 @@ const Projects = () => {
                                     <Link href=" " target="_blank">
                                         <OpenInNewIcon fontSize='large' sx={{
                                             transition: '0.4s',
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 boxShadow: 20,
                                                 color: 'white'
                                             }
@@ -153,17 +153,17 @@ const Projects = () => {
                     </Grid>
                     <Grid Item xs={4}>
                         <Card sx={{
-                            height: { xs: 150, md: 170, lg: 210 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
                                 boxShadow: 20,
                                 color: 'white'
                             }
                         }} onClick={() => setOpenCard4(true)}>
-                            <CardActionArea>
+                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
                                 <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ color: 'white', fontSize: { xs: 16, md: 19, lg: 23 } }}>
+                                    <Typography gutterBottom textAlign='center' sx={{ color: 'white', fontSize: { xs: 18, md: 20, lg: 21 } }}>
                                         PandasAI
                                     </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 10, md: 12, lg: 14 }, color: '#00ff00' }}>
+                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
                                         Python | PandasAI | Streamlit | Git
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign='center'>
@@ -173,7 +173,7 @@ const Projects = () => {
                                     <Link href=" " target="_blank">
                                         <DescriptionIcon fontSize='large' sx={{
                                             transition: '0.4s',
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 boxShadow: 20,
                                                 color: 'white'
                                             }
@@ -182,7 +182,7 @@ const Projects = () => {
                                     <Link href="https://github.com/kvarad6/PandasAI" target="_blank">
                                         <GitHubIcon fontSize='large' sx={{
                                             transition: '0.4s',
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 boxShadow: 20,
                                                 color: 'white'
                                             }
@@ -195,17 +195,17 @@ const Projects = () => {
                     </Grid>
                     <Grid Item xs={4}>
                         <Card sx={{
-                            height: { xs: 150, md: 170, lg: 210 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
                                 boxShadow: 20,
                                 color: 'white'
                             }
                         }} onClick={() => setOpenCard5(true)}>
-                            <CardActionArea>
+                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
                                 <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 16, md: 19, lg: 23 }, color: 'white' }}>
+                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
                                         Checkout Form
                                     </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 10, md: 12, lg: 14 }, color: '#00ff00' }}>
+                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
                                         HTML | CSS | Javascript | React | Material UI | Git
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign='center'>
@@ -215,7 +215,7 @@ const Projects = () => {
                                     <Link href="https://github.com/kvarad6/checkout-form" target="_blank">
                                         <GitHubIcon fontSize='large' sx={{
                                             transition: '0.4s',
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 boxShadow: 20,
                                                 color: 'white'
                                             }
@@ -224,7 +224,7 @@ const Projects = () => {
                                     <Link href="https://kvarad6.github.io/checkout-form/" target="_blank">
                                         <OpenInNewIcon fontSize='large' sx={{
                                             transition: '0.4s',
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 boxShadow: 20,
                                                 color: 'white'
                                             }
@@ -237,17 +237,17 @@ const Projects = () => {
                     </Grid>
                     <Grid Item xs={4}>
                         <Card sx={{
-                            height: { xs: 150, md: 170, lg: 210 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
                                 boxShadow: 20,
                                 color: 'white'
                             }
                         }} onClick={() => setOpen(true)}>
-                            <CardActionArea>
+                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
                                 <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 16, md: 19, lg: 23 }, color: 'white' }}>
+                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
                                         College Enquiry Chatbot
                                     </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 10, md: 12, lg: 14 }, color: '#00ff00' }}>
+                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
                                         Microsoft Bot Framework | NodeJS | MongoDB | Git | JIRA
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign='center'>
@@ -257,7 +257,7 @@ const Projects = () => {
                                     <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
                                         <DescriptionIcon fontSize='large' sx={{
                                             transition: '0.4s',
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 boxShadow: 20,
                                                 color: 'white'
                                             }
@@ -266,7 +266,7 @@ const Projects = () => {
                                     <Link href=" " target="_blank">
                                         <OpenInNewIcon fontSize='large' sx={{
                                             transition: '0.4s',
-                                            fontSize: { xs: 20, md: 25, lg: 30 }, color: 'black', ':hover': {
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 boxShadow: 20,
                                                 color: 'white'
                                             }
@@ -344,7 +344,7 @@ const Projects = () => {
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
-        </>
+        </div>
     )
 }
 

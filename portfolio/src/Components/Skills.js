@@ -22,23 +22,24 @@ import mongodbLogo from '../static/images/logo/mongodbLogo.png'
 
 const Skills = () => {
     return (
-        <>
+        <div id="skills">
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item>
-                        <Typography sx={{ textAlign: 'center', fontSize: { xs: 28, md: 35, lg: 40 }, color: '#64CCC5' }}>My Tech Stack</Typography>
+                        {/* <Typography sx={{ textAlign: 'center', fontSize: { xs: 28, md: 35, lg: 40 }, color: '#64CCC5' }}>My Tech Stack</Typography> */}
+                        <Typography sx={{ textAlign: 'center', fontSize: { xs: 28, md: 29, lg: 30 }, color: '#97FEED' }}>My Tech Stack</Typography>
                     </Grid>
                     <Grid Item>
                         <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 20, md: 30, lg: 40 } }} />
                     </Grid>
                 </Grid>
                 <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: 5 }}>
-                    <Tooltip title='C' placement="top">
-                        <Avatar alt="C" src={cLogo} variant="rounded" sx={{ width: { xs: 40, md: 50, lg: 60 }, height: { xs: 40, md: 50, lg: 60 } }} />
-                    </Tooltip>
-                    <Tooltip title='HTML' placement="top">
-                        <Avatar alt="HTML" src={htmlLogo} variant="rounded" sx={{ width: { xs: 40, md: 50, lg: 60 }, height: { xs: 40, md: 50, lg: 60 } }} />
-                    </Tooltip>
+                        <Tooltip title='C' placement="top">
+                            <Avatar alt="C" src={cLogo} variant="rounded" sx={{ width: { xs: 40, md: 50, lg: 60 }, height: { xs: 40, md: 50, lg: 60 } }} />
+                        </Tooltip>
+                        <Tooltip title='HTML' placement="top">
+                            <Avatar alt="HTML" src={htmlLogo} variant="rounded" sx={{ width: { xs: 40, md: 50, lg: 60 }, height: { xs: 40, md: 50, lg: 60 } }} />
+                        </Tooltip>
                     <Tooltip title='CSS' placement="top">
                         <Avatar alt="CSS" src={cssLogo} variant="rounded" sx={{ width: { xs: 40, md: 50, lg: 60 }, height: { xs: 40, md: 50, lg: 60 } }} />
                     </Tooltip>
@@ -77,7 +78,7 @@ const Skills = () => {
                     </Tooltip> */}
                 </Grid>
             </Box>
-        </>
+        </div>
     )
 }
 

@@ -8,11 +8,11 @@ import ICICC_Certificate from '../static/images/publications/ICICC_Certificate.j
 
 const Publications = () => {
     return (
-        <>
+        <div id="publications">
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item>
-                        <Typography sx={{ fontSize: { xs: 28, md: 35, lg: 40 }, color: '#64CCC5' }}>Publications</Typography>
+                        <Typography sx={{ fontSize: { xs: 28, md: 29, lg: 30 }, color: '#97FEED' }}>Publications</Typography>
                     </Grid>
                     <Grid Item>
                         <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 20, md: 30, lg: 40 } }} />
@@ -20,14 +20,14 @@ const Publications = () => {
                 </Grid>
                 <Grid sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
                     <Grid Item xs={6}>
-                        <Card sx={{ backgroundColor: '#0A4D68', width: { xs: 300, md: 330, lg: 350 }, height: { xs: 310, md: 350, lg: 370 } }}>
+                        <Card sx={{ backgroundColor: '#0A4D68', width: { xs: 300, md: 300, lg: 300 }, height: { xs: 310, md: 320, lg: 340 } }}>
                             <CardMedia
-                                sx={{ width: { xs: 300, md: 330, lg: 350 }, height: { xs: 210, md: 240, lg: 260 } }}
+                                sx={{ width: { xs: 300, md: 300, lg: 300 }, height: { xs: 210, md: 220, lg: 240 } }}
                                 image={IEEE_Certificate}
                                 title="IEEE Certificate"
                             />
                             <CardContent>
-                                <Typography textAlign='center' sx={{ color: 'white', fontSize: { xs: 16, md: 18, lg: 20 } }}>
+                                <Typography textAlign='center' sx={{ color: 'white', fontSize: { xs: 16, md: 17, lg: 18 } }}>
                                     ICAISS - 2022
                                 </Typography>
                             </CardContent>
@@ -35,7 +35,7 @@ const Publications = () => {
                                 <Link href="https://ieeexplore.ieee.org/document/10010749" target="_blank">
                                     <OpenInNewIcon fontSize='large' sx={{
                                         transition: '0.4s',
-                                        fontSize: { xs: 22, md: 26, lg: 30 }, color: 'black', ':hover': {
+                                        fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
                                         }
@@ -45,14 +45,14 @@ const Publications = () => {
                         </Card>
                     </Grid>
                     <Grid Item xs={6}>
-                        <Card sx={{ backgroundColor: '#0A4D68', width: { xs: 300, md: 330, lg: 350 }, height: { xs: 310, md: 350, lg: 370 } }}>
+                        <Card sx={{ backgroundColor: '#0A4D68', width: { xs: 300, md: 300, lg: 300 }, height: { xs: 310, md: 320, lg: 340 } }}>
                             <CardMedia
-                                sx={{ width: { xs: 300, md: 330, lg: 350 }, height: { xs: 210, md: 240, lg: 260 } }}
+                                sx={{ width: { xs: 300, md: 300, lg: 300 }, height: { xs: 210, md: 220, lg: 240 } }}
                                 image={ICICC_Certificate}
                                 title="ICICC Certificate"
                             />
                             <CardContent>
-                                <Typography variant="h6" textAlign='center' sx={{ color: 'white', fontSize: { xs: 16, md: 18, lg: 20 } }}>
+                                <Typography variant="h6" textAlign='center' sx={{ color: 'white', fontSize: { xs: 16, md: 17, lg: 18 } }}>
                                     ICICC - 2021
                                 </Typography>
                             </CardContent>
@@ -60,8 +60,8 @@ const Publications = () => {
                                 <Link href="https://ssrn.com/abstract=3833762" target="_blank">
                                     <OpenInNewIcon fontSize='large' sx={{
                                         transition: '0.4s',
-                                        fontSize: { xs: 22, md: 26, lg: 30 },
-                                        color: 'black', ':hover': {
+                                        fontSize: { xs: 20, md: 22, lg: 25 },
+                                        color: '#97FEED', ':hover': {
                                             boxShadow: 20, // theme.shadows[20]
                                             color: 'white'
                                         }
@@ -72,7 +72,7 @@ const Publications = () => {
                     </Grid>
                 </Grid>
             </Box>
-        </>
+        </div>
     )
 }
 

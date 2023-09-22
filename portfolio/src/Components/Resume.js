@@ -20,11 +20,11 @@ const Resume = () => {
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down('sm'));
     return (
-        <>
+        <div id="resume">
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item>
-                        <Typography sx={{ fontSize: { xs: 28, md: 35, lg: 40 }, color: '#64CCC5' }}>Resume</Typography>
+                        <Typography sx={{ fontSize: { xs: 28, md: 29, lg: 30 }, color: '#97FEED' }}>Resume</Typography>
                     </Grid>
                     <Grid Item>
                         <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 20, md: 30, lg: 40 } }} />
@@ -32,7 +32,7 @@ const Resume = () => {
                 </Grid>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 5 }}>
                     <Grid Item xs={6}>
-                        <Typography textAlign='center' sx={{ fontSize: { xs: 23, md: 27, lg: 30 }, color: '#3AA6B9' }}>Work Experience</Typography>
+                        <Typography textAlign='center' sx={{ fontSize: { xs: 23, md: 24, lg: 25 }, color: '#5CD2E6' }}>Work Experience</Typography>
                     </Grid>
                     <Grid Item xs={6}>
                         {
@@ -58,7 +58,7 @@ const Resume = () => {
                                             <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                 Searce Inc.
                                             </Typography>
-                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                 Python | FastAPI | Google Cloud Datastore | Django | Apigee | Cloud SQL | PandasAI
                                             </Typography>
                                             <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
@@ -118,7 +118,7 @@ const Resume = () => {
                                             <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                 Searce Inc.
                                             </Typography>
-                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                 Python | FastAPI | Microsoft SQL Server | MySQL
                                             </Typography>
                                             <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
@@ -158,7 +158,7 @@ const Resume = () => {
                                             <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                 Tejgyan Foundation (TCS-TGF)
                                             </Typography>
-                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                            <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                 HTML | CSS | Python | Flask
                                             </Typography>
                                             <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
@@ -379,7 +379,7 @@ const Resume = () => {
                 </Grid>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item xs={6}>
-                        <Typography textAlign='center' sx={{ fontSize: { xs: 23, md: 27, lg: 30 }, color: '#3AA6B9' }}>Education</Typography>
+                        <Typography textAlign='center' sx={{ fontSize: { xs: 23, md: 24, lg: 25 }, color: '#5CD2E6' }}>Education</Typography>
                     </Grid>
                     <Grid Item xs={6} sx={{ width: '100%' }}>
                         {
@@ -532,7 +532,7 @@ const Resume = () => {
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
-        </>
+        </div>
     )
 }
 

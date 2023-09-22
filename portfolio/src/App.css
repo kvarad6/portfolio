@@ -1,8 +1,11 @@
 .App {
   text-align: center;
 }
-body{
+
+body {
   background-color: #053B50;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -35,6 +38,7 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

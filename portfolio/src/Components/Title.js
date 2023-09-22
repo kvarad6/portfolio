@@ -4,9 +4,9 @@ import programmer from '../static/images/avatar/programmer.png'
 
 const Title = () => {
     return (
-        <>
+        <div id="home">
             <Box>
-                <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'left', flexWrap: 'wrap', gap: { xs: 8, md: 10, lg: 15 }}}>
+                <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'left', flexWrap: 'wrap', gap: { xs: 8, md: 10, lg: 15 } }}>
                     <Grid Item xs={6}>
                         <Grid Item xs={6} >
                             <Typography sx={{ color: 'white', fontSize: { xs: 15, md: 25, lg: 30 } }}>Hi, I am</Typography>
@@ -23,27 +23,28 @@ const Title = () => {
                     <Grid Item xs={6}>
                         <Button href="mailto:kvarad6@gmail.com" target="_blank" variant="outlined" sx={{
                             transition: '0.4s',
-                            color: '#64CCC5', textTransform: 'none', fontSize: { xs: 13, md: 15, lg: 20 }, borderColor: '#64CCC5', ':hover': {
+                            color: '#97FEED', textTransform: 'none', fontSize: { xs: 13, md: 15, lg: 20 }, borderColor: '#64CCC5', ':hover': {
                                 borderColor: 'white',
                                 color: 'white'
-                            } }}>
+                            }
+                        }}>
                             Contact Me
                         </Button>
                     </Grid>
                     <Grid Item xs={6}>
                         <Button href="https://drive.google.com/file/d/14XgZQlgVFNDzghkwiDY4S88Qb2A7Xust/view?usp=sharing" target="_blank" variant="outlined" sx={{
                             transition: '0.4s',
-                            color: '#64CCC5', textTransform: 'none', fontSize: { xs: 13, md: 15, lg: 20 }, borderColor: '#64CCC5', ':hover': {
+                            color: '#97FEED', textTransform: 'none', fontSize: { xs: 13, md: 15, lg: 20 }, borderColor: '#64CCC5', ':hover': {
                                 borderColor: 'white',
                                 color: 'white'
-                            } }}>
+                            }
+                        }}>
                             Resume
                         </Button>
                     </Grid>
                 </Grid>
             </Box>
-
-        </>
+        </div>
     )
 }
 
