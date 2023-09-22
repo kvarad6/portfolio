@@ -6,7 +6,11 @@ import CancelIcon from '@mui/icons-material/Cancel';
 const DrawerComponent = () => {
     const [openDrawer, setOpenDrawer] = React.useState(false);
     const pages = { 'Home': '#home', 'About': '#about', 'Resume': '#resume', 'Projects': '#projects', 'Certifications': '#certifications', 'Publications': '#publications', 'Contact': '#contacts' }
-
+    function autoScroll() {
+        setTimeout(() => {
+            window.scrollBy(0, -100);
+        }, [0])
+    }
     return (
         <>
             <SwipeableDrawer anchor={"right"} open={openDrawer} onClose={() => setOpenDrawer(false)}>
@@ -22,7 +26,7 @@ const DrawerComponent = () => {
                         {
                             Object.entries(pages).map(([key, value]) => (
                                 <ListItemButton
-                                    onClick={() => setOpenDrawer(false)}
+                                    onClick={() => { autoScroll(); setOpenDrawer(false) }}
                                     key={key}
                                     label={key}
                                     href={value}>

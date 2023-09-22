@@ -28,7 +28,7 @@ const AboutMe = () => {
                         <Typography sx={{ textAlign: 'center', fontSize: { xs: 28, md: 30, lg: 33 }, color: '#97FEED' }}>About Me</Typography>
                     </Grid>
                     <Grid Item xs={12}>
-                        <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 20, md: 30, lg: 40 } }} />
+                        <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 30, md: 35, lg: 40 }, color:'#97FEED' }} />
                     </Grid>
                 </Grid>
                 {/* <Grid sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 5, ml: 45, mr: 45, textAlign: 'justify' }}>

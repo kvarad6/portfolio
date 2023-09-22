@@ -11,11 +11,9 @@ const Header = () => {
   const [value, setValue] = React.useState();
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down('md'));
-  function autoScroll(value) {
-    console.log("xyz")
-    console.log(value)
+  function autoScroll() {
     setTimeout(() => {
-      window.scrollBy(0, -200);
+      window.scrollBy(0, -100);
     }, [0])
 
 
@@ -25,7 +23,7 @@ const Header = () => {
     <>
       <AppBar elevation={0} position='fixed' sx={{ backgroundColor: '#053B50', boxShadow: 'none' }}>
         <Toolbar>
-          <Button href="#" sx={{ textTransform: 'none'}}>
+          <Button href="#" sx={{ textTransform: 'none' }}>
             <KeyboardArrowLeftIcon sx={{ color: 'white' }} />
             <Typography sx={{ color: '#5CD2E6', fontWeight: 500, fontSize: 20 }}>Varad Kulkarni <span style={{ color: 'white' }}>/</span></Typography>
             <KeyboardArrowRightIcon sx={{ color: 'white' }} />
@@ -36,7 +34,7 @@ const Header = () => {
             ) : (
               <Tabs sx={{ marginLeft: 'auto' }} value={value}
                 onChange={(e, value) => {
-                  autoScroll(value);
+                  autoScroll();
                   setValue(value);
 
                 }} TabIndicatorProps={{
