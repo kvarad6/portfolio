@@ -21,262 +21,262 @@ const Projects = () => {
             <motion.div initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}>
-            <Box>
-                <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <Grid Item>
-                        <Typography sx={{ fontSize: { xs: 28, md: 30, lg: 33 }, color: '#97FEED' }}>Projects</Typography>
+                <Box>
+                    <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <Grid Item>
+                            <Typography sx={{ fontSize: { xs: 28, md: 30, lg: 33 }, color: '#97FEED' }}>Projects</Typography>
+                        </Grid>
+                        <Grid Item>
+                            <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 30, md: 35, lg: 40 }, color: '#97FEED' }} />
+                        </Grid>
                     </Grid>
-                    <Grid Item>
-                        <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 30, md: 35, lg: 40 }, color: '#97FEED' }} />
-                    </Grid>
-                </Grid>
-                <Grid sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
-                    <Grid Item xs={4}>
-                        <Card sx={{
-                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
-                                boxShadow: 20,
-                                color: 'white'
-                            }
-                        }} onClick={() => setOpenCard1(true)}>
-                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
-                                <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
-                                        College Enquiry Chatbot
-                                    </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
-                                        Microsoft Bot Framework | NodeJS | MongoDB | Git | JIRA
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" textAlign='center'>
-                                    </Typography>
-                                </CardContent>
-                                <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-                                    <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
-                                        <DescriptionIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                    <Link href="https://drive.google.com/file/d/1v3N8wlJVyzKplX3bPVxqKoAJ9wIzP7Vs/view?usp=sharing" target="_blank">
-                                        <OpenInNewIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                </CardActions>
-
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid Item xs={4}>
-                        <Card sx={{
-                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
-                                boxShadow: 20,
-                                color: 'white'
-                            }
-                        }} onClick={() => setOpenCard2(true)}>
-                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
-                                <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
-                                        Job Recommendation System
-                                    </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
-                                        Python | Machine Learning
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" textAlign='center'>
-                                    </Typography>
-                                </CardContent>
-                                <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', mb: 4 }}>
-                                    <Link href="https://github.com/kvarad6/Recommendation-System-for-Workers-Customers" target="_blank">
-                                        <GitHubIcon fontSize='large' sx={{
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                    <Grid sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
+                        <Grid Item xs={4}>
+                            <Card sx={{
+                                height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                                    boxShadow: 20,
+                                    color: 'white'
+                                }
+                            }} onClick={() => setOpenCard1(true)}>
+                                <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
+                                    <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
+                                        <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
+                                            College Enquiry Chatbot
+                                        </Typography>
+                                        <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
+                                            Microsoft Bot Framework | NodeJS | MongoDB | Git | JIRA
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary" textAlign='center'>
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                        <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
+                                            <DescriptionIcon fontSize='large' sx={{
                                                 transition: '0.4s',
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                    <Link href="https://ssrn.com/abstract=3833762" target="_blank">
-                                        <DescriptionIcon fontSize='large' sx={{
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                        <Link href="https://drive.google.com/file/d/1v3N8wlJVyzKplX3bPVxqKoAJ9wIzP7Vs/view?usp=sharing" target="_blank">
+                                            <OpenInNewIcon fontSize='large' sx={{
                                                 transition: '0.4s',
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                </CardActions>
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                    </CardActions>
 
-                            </CardActionArea>
-                        </Card>
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid Item xs={4}>
+                            <Card sx={{
+                                height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                                    boxShadow: 20,
+                                    color: 'white'
+                                }
+                            }} onClick={() => setOpenCard2(true)}>
+                                <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
+                                    <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
+                                        <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
+                                            Job Recommendation System
+                                        </Typography>
+                                        <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
+                                            Python | Machine Learning
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary" textAlign='center'>
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', mb: 4 }}>
+                                        <Link href="https://github.com/kvarad6/Recommendation-System-for-Workers-Customers" target="_blank">
+                                            <GitHubIcon fontSize='large' sx={{
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    transition: '0.4s',
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                        <Link href="https://ssrn.com/abstract=3833762" target="_blank">
+                                            <DescriptionIcon fontSize='large' sx={{
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    transition: '0.4s',
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                    </CardActions>
+
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid Item xs={4}>
+                            <Card sx={{
+                                height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                                    boxShadow: 20,
+                                    color: 'white'
+                                }
+                            }} onClick={() => setOpenCard3(true)}>
+                                <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
+                                    <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
+                                        <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
+                                            Portfolio
+                                        </Typography>
+                                        <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
+                                            React | Material UI | HTML | CSS | Javascript
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary" textAlign='center'>
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                        <Link href="https://github.com/kvarad6/portfolio" target="_blank">
+                                            <GitHubIcon fontSize='large' sx={{
+                                                transition: '0.4s',
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                        <Link href="https://kvarad6.github.io/portfolio/" target="_blank">
+                                            <OpenInNewIcon fontSize='large' sx={{
+                                                transition: '0.4s',
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                    </CardActions>
+
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid Item xs={4}>
+                            <Card sx={{
+                                height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                                    boxShadow: 20,
+                                    color: 'white'
+                                }
+                            }} onClick={() => setOpenCard4(true)}>
+                                <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
+                                    <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
+                                        <Typography gutterBottom textAlign='center' sx={{ color: 'white', fontSize: { xs: 18, md: 20, lg: 21 } }}>
+                                            ChatCSV Application using PandasAI
+                                        </Typography>
+                                        <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
+                                            Python | PandasAI | Streamlit | OpenAI
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary" textAlign='center'>
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', mb: 3 }}>
+                                        <Link href="https://github.com/kvarad6/PandasAI" target="_blank">
+                                            <GitHubIcon fontSize='large' sx={{
+                                                transition: '0.4s',
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                        <Link href=" " target="_blank">
+                                            <OpenInNewIcon fontSize='large' sx={{
+                                                transition: '0.4s',
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+
+                                    </CardActions>
+
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid Item xs={4}>
+                            <Card sx={{
+                                height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                                    boxShadow: 20,
+                                    color: 'white'
+                                }
+                            }} onClick={() => setOpenCard5(true)}>
+                                <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
+                                    <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
+                                        <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
+                                            Checkout Form
+                                        </Typography>
+                                        <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
+                                            HTML | CSS | Javascript | React | Material UI | Git
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary" textAlign='center'>
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                        <Link href="https://github.com/kvarad6/checkout-form" target="_blank">
+                                            <GitHubIcon fontSize='large' sx={{
+                                                transition: '0.4s',
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                        <Link href="https://kvarad6.github.io/checkout-form/" target="_blank">
+                                            <OpenInNewIcon fontSize='large' sx={{
+                                                transition: '0.4s',
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                    </CardActions>
+
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid Item xs={4}>
+                            <Card sx={{
+                                height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                                    boxShadow: 20,
+                                    color: 'white'
+                                }
+                            }} onClick={() => setOpenCard6(true)}>
+                                <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
+                                    <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
+                                        <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
+                                            Data Retrieval System
+                                        </Typography>
+                                        <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
+                                            Python | Flask | HTML | CSS | JIRA | Git | SQLite Database | SQLAlchemy
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary" textAlign='center'>
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                        <Link href="https://drive.google.com/file/d/1Jw0qegZJqXYm9liJ9ZLCEhhhv1cS4cb8/view?usp=sharing" target="_blank">
+                                            <OpenInNewIcon fontSize='large' sx={{
+                                                transition: '0.4s',
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                    </CardActions>
+
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
                     </Grid>
-                    <Grid Item xs={4}>
-                        <Card sx={{
-                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
-                                boxShadow: 20,
-                                color: 'white'
-                            }
-                        }} onClick={() => setOpenCard3(true)}>
-                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
-                                <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
-                                        Portfolio
-                                    </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
-                                        React | Material UI | HTML | CSS | Javascript
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" textAlign='center'>
-                                    </Typography>
-                                </CardContent>
-                                <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-                                    <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
-                                        <GitHubIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                    <Link href=" " target="_blank">
-                                        <OpenInNewIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                </CardActions>
-
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid Item xs={4}>
-                        <Card sx={{
-                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
-                                boxShadow: 20,
-                                color: 'white'
-                            }
-                        }} onClick={() => setOpenCard4(true)}>
-                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
-                                <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ color: 'white', fontSize: { xs: 18, md: 20, lg: 21 } }}>
-                                        ChatCSV Application using PandasAI
-                                    </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
-                                        Python | PandasAI | Streamlit | OpenAI
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" textAlign='center'>
-                                    </Typography>
-                                </CardContent>
-                                <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', mb: 3 }}>
-                                    <Link href="https://github.com/kvarad6/PandasAI" target="_blank">
-                                        <GitHubIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                    <Link href=" " target="_blank">
-                                        <OpenInNewIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-
-                                </CardActions>
-
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid Item xs={4}>
-                        <Card sx={{
-                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
-                                boxShadow: 20,
-                                color: 'white'
-                            }
-                        }} onClick={() => setOpenCard5(true)}>
-                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
-                                <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
-                                        Checkout Form
-                                    </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
-                                        HTML | CSS | Javascript | React | Material UI | Git
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" textAlign='center'>
-                                    </Typography>
-                                </CardContent>
-                                <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-                                    <Link href="https://github.com/kvarad6/checkout-form" target="_blank">
-                                        <GitHubIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                    <Link href="https://kvarad6.github.io/checkout-form/" target="_blank">
-                                        <OpenInNewIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                </CardActions>
-
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid Item xs={4}>
-                        <Card sx={{
-                            height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
-                                boxShadow: 20,
-                                color: 'white'
-                            }
-                        }} onClick={() => setOpenCard6(true)}>
-                            <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
-                                <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
-                                    <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
-                                        Data Retrieval System
-                                    </Typography>
-                                    <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
-                                        Python | Flask | HTML | CSS | JIRA | Git | SQLite Database | SQLAlchemy
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" textAlign='center'>
-                                    </Typography>
-                                </CardContent>
-                                <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-                                    <Link href="https://drive.google.com/file/d/1Jw0qegZJqXYm9liJ9ZLCEhhhv1cS4cb8/view?usp=sharing" target="_blank">
-                                        <OpenInNewIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                </CardActions>
-
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                </Grid>
-            </ Box>
+                </ Box>
             </motion.div>
             <Dialog open={openCard1} onClose={() => setOpenCard1(false)}>
                 <DialogTitle textAlign='center' sx={{ fontSize: { xs: 20, md: 23, lg: 25 } }}>College Enquiry Chatbot</DialogTitle>
