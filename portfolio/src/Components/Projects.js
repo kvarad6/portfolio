@@ -5,16 +5,22 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import DescriptionIcon from '@mui/icons-material/Description';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { motion } from "framer-motion"
+
 
 const Projects = () => {
-    const [open, setOpen] = useState(false);
+    const [openCard1, setOpenCard1] = useState(false);
     const [openCard2, setOpenCard2] = useState(false);
     const [openCard3, setOpenCard3] = useState(false);
     const [openCard4, setOpenCard4] = useState(false);
     const [openCard5, setOpenCard5] = useState(false);
+    const [openCard6, setOpenCard6] = useState(false);
 
     return (
         <div id="projects">
+            <motion.div initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}>
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item>
@@ -31,7 +37,7 @@ const Projects = () => {
                                 boxShadow: 20,
                                 color: 'white'
                             }
-                        }} onClick={() => setOpen(true)}>
+                        }} onClick={() => setOpenCard1(true)}>
                             <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
                                 <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
                                     <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
@@ -53,7 +59,7 @@ const Projects = () => {
                                             }
                                         }} />
                                     </Link>
-                                    <Link href=" " target="_blank">
+                                    <Link href="https://drive.google.com/file/d/1v3N8wlJVyzKplX3bPVxqKoAJ9wIzP7Vs/view?usp=sharing" target="_blank">
                                         <OpenInNewIcon fontSize='large' sx={{
                                             transition: '0.4s',
                                             fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
@@ -77,7 +83,7 @@ const Projects = () => {
                             <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
                                 <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
                                     <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
-                                        Recommendation System
+                                        Job Recommendation System
                                     </Typography>
                                     <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
                                         Python | Machine Learning
@@ -86,8 +92,8 @@ const Projects = () => {
                                     </Typography>
                                 </CardContent>
                                 <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', mb: 4 }}>
-                                    <Link href="https://ssrn.com/abstract=3833762" target="_blank">
-                                        <DescriptionIcon fontSize='large' sx={{
+                                    <Link href="https://github.com/kvarad6/Recommendation-System-for-Workers-Customers" target="_blank">
+                                        <GitHubIcon fontSize='large' sx={{
                                             fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 transition: '0.4s',
                                                 boxShadow: 20,
@@ -95,8 +101,8 @@ const Projects = () => {
                                             }
                                         }} />
                                     </Link>
-                                    <Link href="https://github.com/kvarad6/Recommendation-System-for-Workers-Customers" target="_blank">
-                                        <GitHubIcon fontSize='large' sx={{
+                                    <Link href="https://ssrn.com/abstract=3833762" target="_blank">
+                                        <DescriptionIcon fontSize='large' sx={{
                                             fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
                                                 transition: '0.4s',
                                                 boxShadow: 20,
@@ -161,24 +167,15 @@ const Projects = () => {
                             <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
                                 <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
                                     <Typography gutterBottom textAlign='center' sx={{ color: 'white', fontSize: { xs: 18, md: 20, lg: 21 } }}>
-                                        PandasAI
+                                        ChatCSV Application using PandasAI
                                     </Typography>
                                     <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
-                                        Python | PandasAI | Streamlit | Git
+                                        Python | PandasAI | Streamlit | OpenAI
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign='center'>
                                     </Typography>
                                 </CardContent>
                                 <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', mb: 3 }}>
-                                    <Link href=" " target="_blank">
-                                        <DescriptionIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
                                     <Link href="https://github.com/kvarad6/PandasAI" target="_blank">
                                         <GitHubIcon fontSize='large' sx={{
                                             transition: '0.4s',
@@ -188,6 +185,16 @@ const Projects = () => {
                                             }
                                         }} />
                                     </Link>
+                                    <Link href=" " target="_blank">
+                                        <OpenInNewIcon fontSize='large' sx={{
+                                            transition: '0.4s',
+                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                boxShadow: 20,
+                                                color: 'white'
+                                            }
+                                        }} />
+                                    </Link>
+
                                 </CardActions>
 
                             </CardActionArea>
@@ -241,29 +248,20 @@ const Projects = () => {
                                 boxShadow: 20,
                                 color: 'white'
                             }
-                        }} onClick={() => setOpen(true)}>
+                        }} onClick={() => setOpenCard6(true)}>
                             <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
                                 <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
                                     <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
-                                        College Enquiry Chatbot
+                                        Data Retrieval System
                                     </Typography>
                                     <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
-                                        Microsoft Bot Framework | NodeJS | MongoDB | Git | JIRA
+                                        Python | Flask | HTML | CSS | JIRA | Git | SQLite Database | SQLAlchemy
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" textAlign='center'>
                                     </Typography>
                                 </CardContent>
                                 <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-                                    <Link href="https://drive.google.com/file/d/1gsrzW73SJIHX9vQCh4T5qErA7imSp1-x/view?usp=sharing" target="_blank">
-                                        <DescriptionIcon fontSize='large' sx={{
-                                            transition: '0.4s',
-                                            fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
-                                                boxShadow: 20,
-                                                color: 'white'
-                                            }
-                                        }} />
-                                    </Link>
-                                    <Link href=" " target="_blank">
+                                    <Link href="https://drive.google.com/file/d/1Jw0qegZJqXYm9liJ9ZLCEhhhv1cS4cb8/view?usp=sharing" target="_blank">
                                         <OpenInNewIcon fontSize='large' sx={{
                                             transition: '0.4s',
                                             fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
@@ -279,7 +277,8 @@ const Projects = () => {
                     </Grid>
                 </Grid>
             </ Box>
-            <Dialog open={open} onClose={() => setOpen(false)}>
+            </motion.div>
+            <Dialog open={openCard1} onClose={() => setOpenCard1(false)}>
                 <DialogTitle textAlign='center' sx={{ fontSize: { xs: 20, md: 23, lg: 25 } }}>College Enquiry Chatbot</DialogTitle>
                 <DialogContent>
                     <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
@@ -322,16 +321,40 @@ const Projects = () => {
                 <DialogContent>
                     <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
                         <KeyboardArrowRightIcon />
-                        xyzzz
+                        This very Portfolio that you are looking at.
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        Tools & Technologies used: React, Material UI, HTML, CSS, Git
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        useState hook has been used to track the state in function components.
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        MUI Components used: AppBar, Drawer, Box, Timeline, Grid, Icons, Avatar, Typography, Dialog, Card, List, Tab
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        This portfoilo is currently hosted on github pages.
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
             <Dialog open={openCard4} onClose={() => setOpenCard4(false)}>
-                <DialogTitle textAlign='center' sx={{ fontSize: { xs: 20, md: 23, lg: 25 } }}>PandasAI</DialogTitle>
+                <DialogTitle textAlign='center' sx={{ fontSize: { xs: 20, md: 23, lg: 25 } }}>ChatCSV Application using PandasAI & LLMs</DialogTitle>
                 <DialogContent>
                     <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
                         <KeyboardArrowRightIcon />
-                        xyzzz
+                        Developed a system to extract useful information from CSV files.
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        PandasAI powered by OpenAI has been used. It's a Python library that adds Generative AI capabilities to pandas
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        It's a Python library that adds Generative AI capabilities to pandas.
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
@@ -340,7 +363,36 @@ const Projects = () => {
                 <DialogContent>
                     <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
                         <KeyboardArrowRightIcon />
-                        xyzzz
+                        Tools & Technologies used: React, Material UI, HTML, CSS, Git
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        useState hook has been used to track the state in function components.
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        useContext hook has been used to share the state between the childrens.
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        MUI Components used: App bar, Toolbar, Container, Paper, Typography, Linear stepper, Grid, List.
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        This form is currently hosted on github pages.
+                    </DialogContentText>
+                </DialogContent>
+            </Dialog>
+            <Dialog open={openCard6} onClose={() => setOpenCard6(false)}>
+                <DialogTitle textAlign='center' sx={{ fontSize: { xs: 20, md: 23, lg: 25 } }}>Data Retrieval System</DialogTitle>
+                <DialogContent>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        Developed a system to search required keywords from thousands of documents and storing the data in the required format.
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        Tools & Technologies Used: Python, Flask, SQLite3 database, HTML, CSS, JIRA
                     </DialogContentText>
                 </DialogContent>
             </Dialog>

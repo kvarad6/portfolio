@@ -15,6 +15,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { timelineItemClasses } from '@mui/lab/TimelineItem';
+import { motion } from "framer-motion"
 
 
 const AboutMe = () => {
@@ -22,6 +23,9 @@ const AboutMe = () => {
     const isMatch = useMediaQuery(theme.breakpoints.down('sm'));
     return (
         <div id="about">
+            <motion.div initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}>
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item xs={12}>
@@ -217,6 +221,7 @@ const AboutMe = () => {
                 }
 
             </Box>
+            </motion.div>
         </div>
     )
 }

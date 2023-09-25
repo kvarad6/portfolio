@@ -5,11 +5,16 @@ import { CardContent, Card, CardActions, Link, CardMedia } from '@mui/material'
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import ACE from '../static/images/certificates/ACE.png'
 import GenAI from '../static/images/certificates/GenAI.png'
+import { motion } from "framer-motion"
+
 
 
 const Certifications = () => {
     return (
         <div id="certifications">
+            <motion.div initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}>
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item>
@@ -73,6 +78,7 @@ const Certifications = () => {
                     </Grid>
                 </Grid>
             </Box>
+            </motion.div>
         </div>
     )
 }

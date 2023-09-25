@@ -7,13 +7,13 @@ import DrawerComponent from './DrawerComponent';
 
 
 const Header = () => {
-  const pages = { 'Home': '#home', 'About': '#about', 'Resume': '#resume', 'Projects': '#projects', 'Certifications': '#certifications', 'Publications': '#publications', 'Contact': '#contacts' }
+  const pages = { 'Home': '#home', 'About': '#about', 'Skills': '#skills', 'Resume': '#resume', 'Projects': '#projects', 'Certifications': '#certifications', 'Publications': '#publications', 'Contact': '#contacts' }
   const [value, setValue] = React.useState();
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down('md'));
   function autoScroll() {
     setTimeout(() => {
-      window.scrollBy(0, -100);
+      window.scrollBy(0, -140);
     }, [0])
 
 

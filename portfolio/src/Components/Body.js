@@ -13,7 +13,7 @@ import Title from './Title'
 const Body = () => {
     return (
         <>
-            <Box sx={{ display: 'flex', flexDirection: 'column', alignContent: 'space-between', rowGap: 12 }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignContent: 'space-between', rowGap: { xs: 12, md: 15, lg: 20 } }}>
                 <Title />
                 <AboutMe />
                 <Skills />

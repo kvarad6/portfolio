@@ -4,10 +4,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import { motion } from "framer-motion"
 
 const ContactMe = () => {
     return (
         <div id="contacts">
+            <motion.div initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}>
             <Box>
                 <Typography sx={{ textAlign: 'center', fontSize: { xs: 28, md: 30, lg: 33 }, color: '#97FEED' }}>Let's Connect</Typography>
                 <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 5, m: 3 }}>
@@ -59,6 +63,7 @@ const ContactMe = () => {
                     </Grid>
                 </Grid>
             </Box>
+            </motion.div>
         </div>
     )
 }

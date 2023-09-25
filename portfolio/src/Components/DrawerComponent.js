@@ -5,7 +5,7 @@ import CancelIcon from '@mui/icons-material/Cancel';
 
 const DrawerComponent = () => {
     const [openDrawer, setOpenDrawer] = React.useState(false);
-    const pages = { 'Home': '#home', 'About': '#about', 'Resume': '#resume', 'Projects': '#projects', 'Certifications': '#certifications', 'Publications': '#publications', 'Contact': '#contacts' }
+    const pages = { 'Home': '#home', 'About': '#about', 'Skills': '#skills', 'Resume': '#resume', 'Projects': '#projects', 'Certifications': '#certifications', 'Publications': '#publications', 'Contact': '#contacts' }
     function autoScroll() {
         setTimeout(() => {
             window.scrollBy(0, -100);

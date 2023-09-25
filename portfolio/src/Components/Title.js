@@ -2,10 +2,14 @@ import { Typography, Box, Grid, Button, Avatar } from '@mui/material'
 import React from 'react'
 // import programmer from '../static/images/avatar/programmer.png'
 import programming2 from '../static/images/avatar/programming2.png'
+import { motion } from "framer-motion"
 
 const Title = () => {
     return (
         <div id="home">
+            <motion.div initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}>
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: { xs: 8, md: 10, lg: 15 } }}>
                     <Grid Item xs={6}>
@@ -44,8 +48,8 @@ const Title = () => {
                         <Avatar alt="Profile Photo" src={programming2} variant="rounded" sx={{ width: { xs: 200, md: 250, lg: 300 }, height: { xs: 200, md: 250, lg: 300 }, alignSelf: 'right' }} />
                     </Grid>
                 </Grid>
-
             </Box>
+            </motion.div>
         </div>
     )
 }

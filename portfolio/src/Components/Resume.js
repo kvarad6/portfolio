@@ -12,7 +12,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { timelineItemClasses } from '@mui/lab/TimelineItem';
-
+import { motion } from "framer-motion"
 
 
 const Resume = () => {
@@ -21,6 +21,9 @@ const Resume = () => {
     const isMatch = useMediaQuery(theme.breakpoints.down('sm'));
     return (
         <div id="resume">
+            <motion.div initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}>
             <Box>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item>
@@ -30,6 +33,9 @@ const Resume = () => {
                         <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 30, md: 35, lg: 40 }, color: '#97FEED' }} />
                     </Grid>
                 </Grid>
+                    <motion.div initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ delay: 0.2 }}>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 5 }}>
                     <Grid Item xs={6}>
                         <Typography textAlign='center' sx={{ fontSize: { xs: 23, md: 24, lg: 25 }, color: '#5CD2E6' }}>Work Experience</Typography>
@@ -377,6 +383,10 @@ const Resume = () => {
                         }
                     </Grid>
                 </Grid>
+                </motion.div>
+                    <motion.div initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ delay: 0.2 }}>
                 <Grid sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <Grid Item xs={6}>
                         <Typography textAlign='center' sx={{ fontSize: { xs: 23, md: 24, lg: 25 }, color: '#5CD2E6' }}>Education</Typography>
@@ -506,7 +516,9 @@ const Resume = () => {
                         }
                     </Grid>
                 </Grid>
+                </motion.div>
             </Box>
+            </motion.div>
             <Dialog open={open} onClose={() => setOpen(false)}>
                 <DialogTitle textAlign='center'>Software Engineer @ Searce Inc</DialogTitle>
                 <DialogContent>
