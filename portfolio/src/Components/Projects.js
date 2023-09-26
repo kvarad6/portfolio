@@ -185,7 +185,7 @@ const Projects = () => {
                                                 }
                                             }} />
                                         </Link>
-                                        <Link href=" " target="_blank">
+                                        {/* <Link href=" " target="_blank">
                                             <OpenInNewIcon fontSize='large' sx={{
                                                 transition: '0.4s',
                                                 fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
@@ -193,7 +193,7 @@ const Projects = () => {
                                                     color: 'white'
                                                 }
                                             }} />
-                                        </Link>
+                                        </Link> */}
 
                                     </CardActions>
 
