@@ -15,6 +15,7 @@ const Projects = () => {
     const [openCard4, setOpenCard4] = useState(false);
     const [openCard5, setOpenCard5] = useState(false);
     const [openCard6, setOpenCard6] = useState(false);
+    const [openCard7, setOpenCard7] = useState(false);
 
     return (
         <div id="projects">
@@ -275,6 +276,39 @@ const Projects = () => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
+                        <Grid Item xs={4}>
+                            <Card sx={{
+                                height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                                    boxShadow: 20,
+                                    color: 'white'
+                                }
+                            }} onClick={() => setOpenCard7(true)}>
+                                <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
+                                    <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
+                                        <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
+                                            GenAI Evaluator
+                                        </Typography>
+                                        <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
+                                            Python | FastAPI | GenAI | LLM | Langchain
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary" textAlign='center'>
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                        <Link href="https://github.com/kvarad6/genai-evaluator" target="_blank">
+                                            <OpenInNewIcon fontSize='large' sx={{
+                                                transition: '0.4s',
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                    </CardActions>
+
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
                     </Grid>
                 </ Box>
             </motion.div>
@@ -393,6 +427,23 @@ const Projects = () => {
                     <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
                         <KeyboardArrowRightIcon />
                         Tools & Technologies Used: Python, Flask, SQLite3 database, HTML, CSS, JIRA
+                    </DialogContentText>
+                </DialogContent>
+            </Dialog>
+            <Dialog open={openCard7} onClose={() => setOpenCard7(false)}>
+                <DialogTitle textAlign='center' sx={{ fontSize: { xs: 20, md: 23, lg: 25 } }}>GenAI Evaluator</DialogTitle>
+                <DialogContent>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        Developed a Question-Answer System to evaluate a user on the basis of any document.
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        The process involves uploading pdf document, extracting text (using PyPdf), generating question-answer pair using prompt, taking user input, validating the answer (checking similarity using cosine similarity).
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        Tools & Technologies Used: Python, FastAPI, GenAI, LLM, Langchain, HTML, CSS.
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
