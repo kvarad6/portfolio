@@ -65,7 +65,7 @@ const Resume = () => {
                                                         Searce Inc.
                                                     </Typography>
                                                     <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 12, md: 13, lg: 15 } }}>
-                                                        Python | FastAPI | Google Cloud Datastore | Django | Apigee | Cloud SQL | PandasAI
+                                                        Python | FastAPI | Google Cloud Datastore | Django | Apigee | Cloud SQL | PandasAI | GenAI
                                                     </Typography>
                                                     <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
                                                         <Grid Item>
@@ -83,7 +83,7 @@ const Resume = () => {
                                                         </Grid>
                                                         <Grid Item>
                                                             <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
-                                                                Currently working on the in-house product Recognic (recognic.ai), streamlining the enterprise's document processing lifecycle.
+                                                                Successfully resolved critical issues, restoring in-house product’s (Recognic | recognic.ai) normal functioning, which streamlines the enterprise's document processing lifecycle.
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
@@ -93,7 +93,7 @@ const Resume = () => {
                                                         </Grid>
                                                         <Grid Item>
                                                             <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
-                                                                Successfully resolved critical issues, restoring the product's normal functioning.
+                                                                Currently Developing a GenAI based application for a client.
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
@@ -230,7 +230,7 @@ const Resume = () => {
                                                         Searce Inc.
                                                     </Typography>
                                                     <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
-                                                        Python | FastAPI | Google Cloud Datastore | Django | Apigee | Cloud SQL | PandasAI
+                                                        Python | FastAPI | Google Cloud Datastore | Django | Apigee | Cloud SQL | PandasAI | GenAI
                                                     </Typography>
                                                     <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
                                                         <Grid Item>
@@ -248,7 +248,7 @@ const Resume = () => {
                                                         </Grid>
                                                         <Grid Item>
                                                             <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
-                                                                Currently working on the in-house product Recognic (recognic.ai), streamlining the enterprise's document processing lifecycle.
+                                                                Successfully resolved critical issues, restoring in-house product’s (Recognic | recognic.ai) normal functioning, which streamlines the enterprise's document processing lifecycle.
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
@@ -258,7 +258,7 @@ const Resume = () => {
                                                         </Grid>
                                                         <Grid Item>
                                                             <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
-                                                                Successfully resolved critical issues, restoring the product's normal functioning.
+                                                                Currently Developing a GenAI based application for a client.
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
