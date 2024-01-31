@@ -93,7 +93,7 @@ const Resume = () => {
                                                         </Grid>
                                                         <Grid Item>
                                                             <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
-                                                                Currently Developing a GenAI based application for a client.
+                                                                Developed a GenAI-powered application that encompasses text extraction from tables, creation of embeddings, storage in a vector database, and deployment on Cloud Run.
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
@@ -258,7 +258,7 @@ const Resume = () => {
                                                         </Grid>
                                                         <Grid Item>
                                                             <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
-                                                                Currently Developing a GenAI based application for a client.
+                                                                Developed a GenAI-powered application that encompasses text extraction from tables, creation of embeddings, storage in a vector database, and deployment on Cloud Run.
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
@@ -366,7 +366,7 @@ const Resume = () => {
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
-                                                        <Grid sx={{ display: 'flex', flexDirection: 'row'}}>
+                                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
                                                         <Grid Item>
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
@@ -541,7 +541,7 @@ const Resume = () => {
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
-                                                    <Grid sx={{ display: 'flex', flexDirection: 'row'}}>
+                                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
                                                         <Grid Item>
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
@@ -551,7 +551,7 @@ const Resume = () => {
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
-                                                    <Grid sx={{ display: 'flex', flexDirection: 'row'}}>
+                                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
                                                         <Grid Item>
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
@@ -561,7 +561,7 @@ const Resume = () => {
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
-                                                    <Grid sx={{ display: 'flex', flexDirection: 'row'}}>
+                                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
                                                         <Grid Item>
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
@@ -619,7 +619,7 @@ const Resume = () => {
                                                             </Typography>
                                                         </Grid>
                                                     </Grid>
-                                                    <Grid sx={{ display: 'flex', flexDirection: 'row'}}>
+                                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
                                                         <Grid Item>
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
