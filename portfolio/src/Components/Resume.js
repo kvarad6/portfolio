@@ -73,6 +73,26 @@ const Resume = () => {
                                                         </Grid>
                                                         <Grid Item>
                                                             <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                                Developed 5+ projects, including production-level client projects and POCs using GenAI.
+                                                            </Typography>
+                                                        </Grid>
+                                                    </Grid>
+                                                    <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
+                                                        <Grid Item>
+                                                            <NavigateNextIcon sx={{ color: 'white' }} />
+                                                        </Grid>
+                                                        <Grid Item>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                                Mentored 10+ teams, helping them tackle complex challenges at the GenAI Hackathon organized by Searce in partnership with Google.
+                                                            </Typography>
+                                                        </Grid>
+                                                    </Grid>
+                                                    <Grid sx={{ display: 'flex', flexDirection: 'row', mt: 3 }}>
+                                                        <Grid Item>
+                                                            <NavigateNextIcon sx={{ color: 'white' }} />
+                                                        </Grid>
+                                                        <Grid Item>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
                                                                 Developed a Document Inventory Management System with Versioning for an automobile giant.
                                                             </Typography>
                                                         </Grid>
@@ -237,7 +257,27 @@ const Resume = () => {
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
                                                         <Grid Item>
-                                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                                Developed 5+ projects, including production-level client projects and POCs using GenAI.
+                                                            </Typography>
+                                                        </Grid>
+                                                    </Grid>
+                                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                        <Grid Item>
+                                                            <NavigateNextIcon sx={{ color: 'white' }} />
+                                                        </Grid>
+                                                        <Grid Item>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                                Mentored 10+ teams, helping them tackle complex challenges at the GenAI Hackathon organized by Searce in partnership with Google.
+                                                            </Typography>
+                                                        </Grid>
+                                                    </Grid>
+                                                    <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
+                                                        <Grid Item>
+                                                            <NavigateNextIcon sx={{ color: 'white' }} />
+                                                        </Grid>
+                                                        <Grid Item>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
                                                                 Developed a Document Inventory Management System with Versioning for an automobile giant.
                                                             </Typography>
                                                         </Grid>
