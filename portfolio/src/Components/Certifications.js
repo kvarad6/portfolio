@@ -5,10 +5,11 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { motion } from 'framer-motion';
 import ACE from '../static/images/certificates/ACE.png';
 import GenAI from '../static/images/certificates/GenAI.png';
+import PMLE from '../static/images/certificates/PMLE.png'
 
 const CertificationCard = ({ image, title, description, link }) => (
     <Grid item xs={6}>
-        <Card sx={{ backgroundColor: '#0A4D68', width: { xs: 300, md: 300, lg: 300 }, height: { xs: 310, md: 320, lg: 340 } }}>
+        <Card sx={{ backgroundColor: '#0A4D68', width: { xs: 300, md: 300, lg: 300 }, height: { xs: 330, md: 350, lg: 380 } }}>
             <CardMedia
                 sx={{ width: { xs: 300, md: 300, lg: 300 }, height: { xs: 210, md: 220, lg: 240 } }}
                 image={image}
@@ -42,15 +43,21 @@ const CertificationCard = ({ image, title, description, link }) => (
 const Certifications = () => {
     const certifications = [
         {
+            image: PMLE,
+            title: 'PMLE Certificate',
+            description: 'Professional Machine Learning Engineer',
+            link: 'https://www.credly.com/badges/3ce938be-f537-4bfe-8c20-74511c94df7a',
+        },
+        {
             image: ACE,
             title: 'ACE Certificate',
-            description: 'Associate Cloud Engineer',
+            description: 'Google Cloud - Associate Cloud Engineer',
             link: 'https://www.credential.net/4d6758ac-54eb-471d-8d12-3d0f4f663773',
         },
         {
             image: GenAI,
             title: 'GenAI Badges & Certifications',
-            description: 'GenAI Badges & Certifications',
+            description: 'Google Cloud - Badges & Certifications',
             link: 'https://partner.cloudskillsboost.google/public_profiles/9ea48476-ca51-4dca-8992-622ba244b3c7',
         },
     ];
@@ -67,7 +74,7 @@ const Certifications = () => {
                             <HorizontalRuleRoundedIcon sx={{ fontSize: { xs: 30, md: 35, lg: 40 }, color: '#97FEED' }} />
                         </Grid>
                     </Grid>
-                    <Grid sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
+                    <Grid sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 5, justifyContent: 'center' }}>
                         {certifications.map((certification, index) => (
                             <CertificationCard key={index} {...certification} />
                         ))}
