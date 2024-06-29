@@ -17,6 +17,7 @@ const Projects = () => {
     const [openCard6, setOpenCard6] = useState(false);
     const [openCard7, setOpenCard7] = useState(false);
     const [openCard8, setOpenCard8] = useState(false);
+    const [openCard9, setOpenCard9] = useState(false);
 
     return (
         <div id="projects">
@@ -114,6 +115,47 @@ const Projects = () => {
                                         </Link>
                                     </CardActions>
 
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid Item xs={4}>
+                            <Card sx={{
+                                height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 }, backgroundColor: '#0A4D68', borderRadius: 3, ':hover': {
+                                    boxShadow: 20,
+                                    color: 'white'
+                                }
+                            }} onClick={() => setOpenCard9(true)}>
+                                <CardActionArea sx={{ height: { xs: 160, md: 180, lg: 230 }, width: { xs: 280, md: 300, lg: 350 } }}>
+                                    <CardContent sx={{ m: { xs: 1, md: 2, lg: 3 } }}>
+                                        <Typography gutterBottom textAlign='center' sx={{ fontSize: { xs: 18, md: 20, lg: 21 }, color: 'white' }}>
+                                            ResuMate
+                                        </Typography>
+                                        <Typography textAlign='center' sx={{ fontSize: { xs: 12, md: 13, lg: 14 }, color: '#00ff00' }}>
+                                            Python | FastAPI | React | Material UI | GenAI (Gemini | Google AI Studio)
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary" textAlign='center'>
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                        <Link href="https://github.com/kvarad6/ResuMate" target="_blank">
+                                            <GitHubIcon fontSize='large' sx={{
+                                                transition: '0.4s',
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                        <Link href="https://resu-mate-git-main-varad-kulkarnis-projects.vercel.app/" target="_blank">
+                                            <OpenInNewIcon fontSize='large' sx={{
+                                                transition: '0.4s',
+                                                fontSize: { xs: 20, md: 22, lg: 25 }, color: '#97FEED', ':hover': {
+                                                    boxShadow: 20,
+                                                    color: 'white'
+                                                }
+                                            }} />
+                                        </Link>
+                                    </CardActions>
                                 </CardActionArea>
                             </Card>
                         </Grid>
@@ -490,7 +532,7 @@ const Projects = () => {
                 </DialogContent>
             </Dialog>
             <Dialog open={openCard8} onClose={() => setOpenCard8(false)}>
-                <DialogTitle textAlign='center' sx={{ fontSize: { xs: 20, md: 23, lg: 25 } }}>Promptopedia</DialogTitle>
+                <DialogTitle textAlign='center' sx={{ fontSize: { xs: 20, md: 23, lg: 25 } }}>Promptopedia : Unleash your AI creativity</DialogTitle>
                 <DialogContent>
                     <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
                         <KeyboardArrowRightIcon />
@@ -502,6 +544,19 @@ const Projects = () => {
                     <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
                         <KeyboardArrowRightIcon />
                         Tools & Technologies Used: Python, FastAPI, React, MUI, Firebase, Firestore.
+                    </DialogContentText>
+                </DialogContent>
+            </Dialog>
+            <Dialog open={openCard9} onClose={() => setOpenCard9(false)}>
+                <DialogTitle textAlign='center' sx={{ fontSize: { xs: 20, md: 23, lg: 25 } }}>ResuMate : Your AI-Powered Resume Coach</DialogTitle>
+                <DialogContent>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        Developed a resume analysis tool powered by GenAI to analyze resumes for targeted job applications and suggest data-driven improvements.
+                    </DialogContentText>
+                    <DialogContentText sx={{ display: 'flex', flexDirection: 'row', fontSize: { xs: 14, md: 15, lg: 16 } }}>
+                        <KeyboardArrowRightIcon />
+                        Technologies Used: React, Python, FastAPI, GenAI (Gemini), Git.
                     </DialogContentText>
                 </DialogContent>
             </Dialog>
