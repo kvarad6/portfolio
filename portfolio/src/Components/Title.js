@@ -21,7 +21,7 @@ const Title = () => {
                             </Grid>
                             <Grid sx={{ display: 'flex', flexDirection: 'row', gap: 10, mt: 5 }}>
                                 <Grid Item xs={6}>
-                                    <Button href="mailto:kvarad6@gmail.com" target="_blank" variant="outlined" sx={{
+                                    <Button href="mailto:varadkulkarni.connect@gmail.com" target="_blank" variant="outlined" sx={{
                                         transition: '0.4s',
                                         color: '#97FEED', textTransform: 'none', fontSize: { xs: 13, md: 15, lg: 20 }, borderColor: '#64CCC5', ':hover': {
                                             borderColor: 'white',
@@ -32,7 +32,7 @@ const Title = () => {
                                     </Button>
                                 </Grid>
                                 <Grid Item xs={6}>
-                                    <Button href="https://drive.google.com/file/d/1n6_gMq9bKiyr1_YhkgtaMaTLWAxbuPO9/view?usp=sharing" target="_blank" variant="outlined" sx={{
+                                    <Button href="https://drive.google.com/file/d/1M8XSIjaN8c3hFoknlJ-ikJvXo_IsFn4g/view?usp=sharing" target="_blank" variant="outlined" sx={{
                                         transition: '0.4s',
                                         color: '#97FEED', textTransform: 'none', fontSize: { xs: 13, md: 15, lg: 20 }, borderColor: '#64CCC5', ':hover': {
                                             borderColor: 'white',
