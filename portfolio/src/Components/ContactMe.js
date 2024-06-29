@@ -28,7 +28,7 @@ const socialLinks = [
     { href: 'https://www.linkedin.com/in/varad-kulkarni-2001/', icon: <LinkedInIcon /> },
     { href: 'https://www.instagram.com/_varad.kulkarni_/', icon: <InstagramIcon /> },
     { href: 'https://github.com/kvarad6', icon: <GitHubIcon /> },
-    { href: 'mailto:kvarad6@gmail.com', icon: <EmailIcon /> },
+    { href: 'mailto:varadkulkarni.connect@gmail.com', icon: <EmailIcon /> },
 ];
 
 const ContactMe = () => {
