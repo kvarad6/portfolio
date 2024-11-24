@@ -49,6 +49,27 @@ const Resume = () => {
                                                 padding: 0,
                                             },
                                         }}>
+                                            {/* Small Screen Devices */}
+                                            {/*MathCo Position*/}
+                                            <TimelineItem>
+                                                <TimelineSeparator>
+                                                    <TimelineDot />
+                                                    <TimelineConnector />
+                                                </TimelineSeparator>
+                                                <TimelineContent sx={{ mb: 4 }}>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 15, md: 18, lg: 20 } }}>
+                                                        Product Engineer 2
+                                                    </Typography>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        MathCo (TheMathCompany)
+                                                    </Typography>
+                                                    <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                                        Python | FastAPI | Azure | Data Science | React
+                                                    </Typography>
+                                                </TimelineContent>
+                                            </TimelineItem>
+
+                                            {/* Searce Position */}
                                             <TimelineItem>
                                                 <TimelineSeparator>
                                                     <TimelineDot />
@@ -59,7 +80,7 @@ const Resume = () => {
                                                         Software Engineer
                                                     </Typography>
                                                     <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
-                                                        August, 22 - Present
+                                                        August, 22 - October, 24
                                                     </Typography>
                                                     <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                         Searce Inc.
@@ -232,10 +253,35 @@ const Resume = () => {
                                         </Timeline>
                                     ) : (
                                         <Timeline>
+                                            {/*MathCo Position*/}
                                             <TimelineItem>
                                                 <TimelineOppositeContent>
                                                     <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
-                                                        August, 22 - Present
+                                                        October, 24 - Present
+                                                    </Typography>
+                                                </TimelineOppositeContent>
+                                                <TimelineSeparator>
+                                                    <TimelineDot />
+                                                    <TimelineConnector />
+                                                </TimelineSeparator>
+                                                <TimelineContent sx={{ mb: 4 }}>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 15, md: 18, lg: 20 } }}>
+                                                        Product Engineer 2
+                                                    </Typography>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
+                                                        MathCo (TheMathCompany)
+                                                    </Typography>
+                                                    <Typography variant="body2" color="text.secondary" sx={{ color: '#00ff00', fontSize: { xs: 11, md: 12, lg: 13 } }}>
+                                                        Python | FastAPI | Azure | Data Science | React
+                                                    </Typography>
+                                                </TimelineContent>
+                                            </TimelineItem>
+
+                                            {/*Searce Position*/}
+                                            <TimelineItem>
+                                                <TimelineOppositeContent>
+                                                    <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
+                                                        August, 22 - October, 24
                                                     </Typography>
                                                 </TimelineOppositeContent>
                                                 <TimelineSeparator>
@@ -257,7 +303,7 @@ const Resume = () => {
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
                                                         <Grid Item>
-                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                                 Developed 5+ projects, including production-level client projects and POCs using GenAI.
                                                             </Typography>
                                                         </Grid>
@@ -267,7 +313,7 @@ const Resume = () => {
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
                                                         <Grid Item>
-                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                                 Mentored 10+ teams, helping them tackle complex challenges at the GenAI Hackathon organized by Searce in partnership with Google.
                                                             </Typography>
                                                         </Grid>
@@ -277,7 +323,7 @@ const Resume = () => {
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
                                                         <Grid Item>
-                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                                 Developed a Document Inventory Management System with Versioning for an automobile giant.
                                                             </Typography>
                                                         </Grid>
@@ -314,6 +360,8 @@ const Resume = () => {
                                                     </Grid>
                                                 </TimelineContent>
                                             </TimelineItem>
+
+                                            {/*Searce Intern Position*/}
                                             <TimelineItem>
                                                 <TimelineOppositeContent>
                                                     <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
@@ -356,6 +404,8 @@ const Resume = () => {
                                                     </Grid>
                                                 </TimelineContent>
                                             </TimelineItem>
+
+                                            {/*TejGyan Position*/}
                                             <TimelineItem>
                                                 <TimelineOppositeContent>
                                                     <Typography sx={{ color: 'white', fontSize: { xs: 13, md: 14, lg: 15 } }}>
@@ -576,7 +626,7 @@ const Resume = () => {
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
                                                         <Grid Item>
-                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                                 Worked as Associate Documentation Head at EDC, VIIT | 2019-20
                                                             </Typography>
                                                         </Grid>
@@ -586,7 +636,7 @@ const Resume = () => {
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
                                                         <Grid Item>
-                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                                 Led the event named "BizzHour", a competition for young aspiring entrepreneurs, inspired from the popular TV series, Shark Tank | 2019-20
                                                             </Typography>
                                                         </Grid>
@@ -596,7 +646,7 @@ const Resume = () => {
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
                                                         <Grid Item>
-                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                                 Worked as Startup Executive, Provided incubation to 10+ startups, organised inhouse Startup Competition named as "Genesis".
                                                             </Typography>
                                                         </Grid>
@@ -606,7 +656,7 @@ const Resume = () => {
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
                                                         <Grid Item>
-                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                                 Worked as a Department Head at Industry Institute Interaction Cell (I2IC), a bridge between industry and college. Organised 5+ podcasts with the industry experts, helped students to gain the industry insights.
                                                             </Typography>
                                                         </Grid>
@@ -654,7 +704,7 @@ const Resume = () => {
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
                                                         <Grid Item>
-                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                                 Participated in Regional Table Tennis Meet (State level competition organised by Navodaya Vidyalaya Samiti) held at JNV Jalgaon | 2014-15
                                                             </Typography>
                                                         </Grid>
@@ -664,7 +714,7 @@ const Resume = () => {
                                                             <NavigateNextIcon sx={{ color: 'white' }} />
                                                         </Grid>
                                                         <Grid Item>
-                                                            <Typography sx={{ color: 'white', fontSize: { xs: 14, md: 15, lg: 15 } }}>
+                                                            <Typography sx={{ color: 'white', fontSize: { xs: 12, md: 13, lg: 15 } }}>
                                                                 Participated in Regional Table Tennis Meet (State level competition organised by Navodaya Vidyalaya Samiti) held at JNV Solapur | 2015-16
                                                             </Typography>
                                                         </Grid>
